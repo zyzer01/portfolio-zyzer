@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
-import { Single_Day } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
 
-const inter = Single_Day({ subsets: ['latin'], variable: '--font-single-day' });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 const proggy = localFont({
   src: './fonts/proggycleantt.ttf',
   display: 'swap',
-  variable: '--font-progy',
+  variable: '--font-proggy',
 });
 
 export const metadata: Metadata = {

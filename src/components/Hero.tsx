@@ -1,10 +1,19 @@
 import React from 'react';
 import Button from './ui/Button';
+import { FiGithub } from 'react-icons/fi';
 
 const Hero = () => {
+  const socials = [
+    {
+      icon: <FiGithub />,
+    },
+  ];
   return (
     <div className="grid grid-cols-5 font-sans">
-      <div className="hidden md:flex"></div>
+      <div className="hidden md:flex flex-col">
+        <Link href={href}></Link>
+        <p></p>
+      </div>
       <div className="col-span-3">
         <p>Hi, my name is</p>
         <h1>David Onifade</h1>
