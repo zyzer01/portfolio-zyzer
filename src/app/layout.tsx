@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Manrope } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope' });
 
 const proggy = localFont({
   src: './fonts/proggycleantt.ttf',
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${proggy.variable}`}>{children}</body>
+      <body className={`${manrope.variable} ${proggy.variable}`}>{children}</body>
     </html>
   );
 }
