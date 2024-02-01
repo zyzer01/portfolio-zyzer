@@ -1,18 +1,35 @@
 import React from 'react';
 import Button from './ui/Button';
 import { FiGithub } from 'react-icons/fi';
+import Link from 'next/link';
 
 const Hero = () => {
   const socials = [
     {
       icon: <FiGithub />,
+      href: 'https://github.com/zyzer01',
+    },
+    {
+      icon: <FiGithub />,
+      href: 'https://github.com/zyzer01',
+    },
+    {
+      icon: <FiGithub />,
+      href: 'https://github.com/zyzer01',
+    },
+    {
+      icon: <FiGithub />,
+      href: 'https://github.com/zyzer01',
     },
   ];
   return (
     <div className="grid grid-cols-5 font-sans">
       <div className="hidden md:flex flex-col">
-        <Link href={href}></Link>
-        <p></p>
+        {socials.map((item, index) => (
+          <Link href={item.href} key={index}>
+            <p>{item.icon}</p>
+          </Link>
+        ))}
       </div>
       <div className="col-span-3">
         <p>Hi, my name is</p>
