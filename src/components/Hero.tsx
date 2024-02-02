@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col space-y-6">
+    <div className="flex flex-col space-y-6 py-32">
       <div>
         <div className="proggy text-xl">
           <Typewriter
