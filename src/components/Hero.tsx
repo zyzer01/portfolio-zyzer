@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col space-y-6 py-32">
+    <div className="flex flex-col space-y-6 pt-32">
       <div>
         <div className="proggy text-xl">
           <Typewriter
@@ -26,7 +26,7 @@ const Hero = () => {
             }}
           />
         </div>
-        <h1 className="text-6xl font-extrabold">
+        <h1 className="text-6xl font-extrabold my-3">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary animate-gradient">
             David Onifade.
           </span>
@@ -34,7 +34,7 @@ const Hero = () => {
         <h2 className="text-6xl font-medium text-shade">I build software solutions.</h2>
       </div>
       <h6>
-        I love web interativity a lot, so I specialize in developing Frontend applications as a
+        I love web interativity a lot, so I focus more in building Frontend applications as a
         software engineer, with occasional work on the backend and infrequent involvement in design.
         I take pride in delivering applications that are not only efficient but also prioritize
         performance, accessibility, and responsiveness.

@@ -1,6 +1,9 @@
 import { socials } from '@/utils/items';
 import Link from 'next/link';
 import Hero from '@/components/Hero';
+import About from '@/components/About';
+import Spacer from '@/components/Spacer';
+import Experience from '@/components/Experience';
 
 const Home = () => {
   return (
@@ -18,6 +21,11 @@ const Home = () => {
       </div>
       <div className="col-start-2 col-span-4">
         <Hero />
+        <Spacer />
+        <About />
+        <Spacer />
+        <Experience />
+        <Spacer />
       </div>
       <div>
         <div className="hidden md:flex justify-center items-center fixed top-0 bottom-0">

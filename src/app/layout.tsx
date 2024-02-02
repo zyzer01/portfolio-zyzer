@@ -24,8 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <NavBar />
-      <body className={`${manrope.variable} ${proggy.variable}`}>{children}</body>
+      <body className={`${manrope.variable} ${proggy.variable}`}>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }

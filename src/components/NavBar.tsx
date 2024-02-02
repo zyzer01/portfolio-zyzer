@@ -3,9 +3,9 @@ import React from 'react';
 
 const NavBar = () => {
   return (
-    <nav>
+    <nav className="proggy text-lg py-8 px-20">
       <div>
-        <ul>
+        <ul className="flex justify-between">
           <li>
             <Link href="#about">About</Link>
           </li>
