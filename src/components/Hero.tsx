@@ -32,7 +32,7 @@ const Hero = () => {
           {/* <div className="proggy pt-8"> */}
           <Marquee>
             {technologies.map((item, index) => (
-              <p key={index} className="flex items-center mr-5 text-xl proggy text-shade">
+              <p key={index} className="flex items-center mr-5 text-xl proggy">
                 <span className={`mr-1.5 text-xl ${item.iconColor}`}>{item.icon}</span>
                 {item.name}
               </p>
@@ -41,7 +41,11 @@ const Hero = () => {
           {/* </div> */}
         </div>
       </div>
-      <div className="hidden md:flex"></div>
+      <div className="hidden md:flex flex-col justify-center">
+        <Link href="mailto:davidicfola@gmail.com">
+          <p>davidicfola@gmail.com</p>
+        </Link>
+      </div>
     </div>
   );
 };

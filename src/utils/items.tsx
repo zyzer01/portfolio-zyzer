@@ -26,7 +26,7 @@ export const technologies = [
   {
     name: 'HTML',
     icon: <FaHtml5 />,
-    iconColor: 'text-red-500',
+    iconColor: 'text-blue-600',
   },
   {
     name: 'Javascript',
