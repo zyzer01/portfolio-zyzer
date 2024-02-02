@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Manrope } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
+import NavBar from '@/components/NavBar';
 
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope' });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <NavBar />
       <body className={`${manrope.variable} ${proggy.variable}`}>{children}</body>
     </html>
   );

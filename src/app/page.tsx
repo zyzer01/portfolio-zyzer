@@ -4,7 +4,7 @@ import Hero from '@/components/Hero';
 
 const Home = () => {
   return (
-    <div className="grid grid-cols-6 px-8 lg-px-16 xl:px-24">
+    <div className="grid grid-cols-6 px-8 lg-px-16 xl:px-20">
       <div>
         <div className="hidden md:flex flex-col space-y-6 justify-center fixed top-0 bottom-0">
           {socials.map((item, index) => (
@@ -17,10 +17,6 @@ const Home = () => {
         </div>
       </div>
       <div className="col-start-2 col-span-4">
-        <Hero />
-        <Hero />
-        <Hero />
-        <Hero />
         <Hero />
       </div>
       <div>
