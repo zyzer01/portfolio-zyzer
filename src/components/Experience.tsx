@@ -16,9 +16,9 @@ const Experience = () => {
       <div className="mb-14 border-b pb-6 border-gray-700 border-dotted">
         <h1 className="text-4xl font-bold">Experience</h1>
       </div>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-3 text-shade">
         <div>
-          <nav className="">
+          <nav className="proggy text-2xl">
             <ul className="flex flex-col space-y-4">
               <li>Netvox</li>
               <li>Netvox</li>
@@ -26,7 +26,7 @@ const Experience = () => {
             </ul>
           </nav>
         </div>
-        <div>Content</div>
+        <div className="col-span-2">Content</div>
       </div>
     </div>
   );
