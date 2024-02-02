@@ -5,6 +5,8 @@ import About from '@/components/About';
 import Spacer from '@/components/Spacer';
 import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
+import OtherProjects from '@/components/OtherProjects';
+import Footer from '@/components/Footer';
 
 const Home = () => {
   return (
@@ -28,6 +30,10 @@ const Home = () => {
         <Experience />
         <Spacer />
         <Projects />
+        <Spacer />
+        <OtherProjects />
+        <Spacer />
+        <Footer />
         <Spacer />
       </div>
       <div>

@@ -44,7 +44,7 @@ const Projects = () => {
         <h1 className="text-4xl font-bold">Projects</h1>
       </div>
 
-      <div className="grid grid-cols-2 gap-8">
+      {/* <div className="grid grid-cols-2 gap-8">
         <div className="hover-effect w-full h-100">
           <img src="/images/lubesurgeons.png" alt="" />
         </div>
@@ -57,7 +57,7 @@ const Projects = () => {
             experience, all at your fingertips.
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
