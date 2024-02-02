@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import About from '@/components/About';
 import Spacer from '@/components/Spacer';
 import Experience from '@/components/Experience';
+import Projects from '@/components/Projects';
 
 const Home = () => {
   return (
@@ -25,6 +26,8 @@ const Home = () => {
         <About />
         <Spacer />
         <Experience />
+        <Spacer />
+        <Projects />
         <Spacer />
       </div>
       <div>

@@ -23,8 +23,17 @@ const About = () => {
             player, and dedicated to open-source contributions for industry advancement.
           </p>
         </div>
-        <div>
-          <Image src={zyzer} alt="David Onifade smiling with his teeth out" />
+        <div className="relative rounded-lg transform group hover:-translate-x-4 hover:-translate-y-4 transition-all ease duration-300">
+          <Image
+            src={zyzer}
+            alt="David Onifade smiling with his teeth out"
+            className="grayscale group-hover:filter-none"
+          />
+          <div
+            className="absolute inset-0 z-[-1] border-2 border-gray-500 rounded-lg"
+            style={{
+              borderImage: 'linear-gradient(45deg, #959595, #FEFEFE) 1',
+            }}></div>
         </div>
       </div>
     </div>

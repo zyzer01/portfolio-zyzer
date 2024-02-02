@@ -4,6 +4,7 @@ import { BiLogoTypescript } from 'react-icons/bi';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { FaNodeJs, FaHtml5, FaReact, FaPython, FaWordpress, FaLinux } from 'react-icons/fa';
 import { CgFramer } from 'react-icons/cg';
+import { ExperienceItem } from './types';
 
 export const socials = [
   {
@@ -66,7 +67,7 @@ export const technologies = [
   },
 ];
 
-export const experience = [
+export const experience: ExperienceItem[] = [
   {
     id: 1,
     company: 'Lubesurgeons',

@@ -9,6 +9,13 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
 h6 {
   color: #8D8D8D;
 }
@@ -62,8 +69,17 @@ body {
   color: linear-gradient(to right, var(--color-primary), var(--color-secondary));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+.image-container {
+  position: relative;
+  display: inline-block; /* Ensures the container takes the size of the image */
+}
+
+.img-section {
+  display: flex;
+  width: full;
+  height: 100%;
+  justify-content: end;
+  align-items: end;
+  background-color: rgb(159, 45, 45);
 }
