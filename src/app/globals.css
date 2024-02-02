@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 :root {
+  --color-primary: '#ED1E79';
+  --color-secondary: '#662D8C';
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -32,6 +34,29 @@ body {
 
 .proggy {
   font-family: var(--font-proggy);
+}
+
+.header-gradient {
+  background: -webkit-linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary),
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  background: linear-gradient(
+    -45deg,
+    var(--color-primary),
+    var(--color-secondary),
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  background-size: 400% 400%;
+  -webkit-animation: gradient 3s ease infinite;
+  animation: gradient 3s ease infinite;
 }
 
 @layer utilities {

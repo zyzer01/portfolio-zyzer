@@ -1,8 +1,9 @@
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
-import { FaXTwitter, FaHashnode } from 'react-icons/fa6';
+import { FaXTwitter, FaHashnode, FaCss3Alt } from 'react-icons/fa6';
 import { BiLogoTypescript } from 'react-icons/bi';
 import { IoLogoJavascript } from 'react-icons/io5';
-import { FaNodeJs, FaHtml5 } from 'react-icons/fa';
+import { FaNodeJs, FaHtml5, FaReact, FaPython, FaWordpress, FaLinux } from 'react-icons/fa';
+import { CgFramer } from 'react-icons/cg';
 
 export const socials = [
   {
@@ -26,26 +27,41 @@ export const technologies = [
   {
     name: 'HTML',
     icon: <FaHtml5 />,
-    iconColor: 'text-blue-600',
   },
   {
     name: 'Javascript',
     icon: <IoLogoJavascript />,
-    iconColor: 'text-yellow-500',
   },
   {
     name: 'Typescript',
     icon: <BiLogoTypescript />,
-    iconColor: 'text-domain',
+  },
+  {
+    name: 'React.js',
+    icon: <FaReact />,
   },
   {
     name: 'Node.js',
     icon: <FaNodeJs />,
-    iconColor: 'text-green-500',
   },
   {
-    name: 'Node.js',
-    icon: <FaNodeJs />,
-    iconColor: 'text-green-500',
+    name: 'Python',
+    icon: <FaPython />,
+  },
+  {
+    name: 'Framer motion',
+    icon: <CgFramer />,
+  },
+  {
+    name: 'Wordpress',
+    icon: <FaWordpress />,
+  },
+  {
+    name: 'Linux',
+    icon: <FaLinux />,
+  },
+  {
+    name: 'CSS3',
+    icon: <FaCss3Alt />,
   },
 ];
