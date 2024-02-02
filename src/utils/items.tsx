@@ -95,6 +95,6 @@ export const experience = [
       'Worked closely with the interdisciplinary team to identify and rank features and requirements. Created and executed unit tests and carried out system testing to maintain the entire infrastructure quality.',
       'Worked closely with the interdisciplinary team to identify and rank features and requirements. Created and executed unit tests and carried out system testing to maintain the entire infrastructure quality.',
     ],
-    desc: 'duration',
+    duration: 'Aug 2023 - Oct 2023 * Remote',
   },
 ];
