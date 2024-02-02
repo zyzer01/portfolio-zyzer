@@ -69,20 +69,20 @@ export const technologies = [
 export const experience = [
   {
     id: 1,
-    company: 'Ubuntu',
+    company: 'Lubesurgeons',
     achievements: ['Ubuntu Server 14', 'Ubuntu Server 16', 'Ubuntu Server 18', 'Ubuntu Server 20'],
-    desc: 'Ubuntu Server stands out as a widely used and adaptable operating system specifically crafted for server environments. Rooted in the Linux kernel, it boasts consistent long-term support (LTS) releases. Renowned for its reliability, security, and a broad range of available software, Ubuntu Server proves to be an excellent option for hosting web services, databases, and various applications.',
+    duration: 'Aug 2023 - Oct 2023 * Remote',
   },
   {
     id: 2,
-    company: 'Debian',
+    company: 'Cloudnetvox',
     achievements: ['Debian 10', 'Debian 11', 'Debian 12'],
-    desc: 'Debian is recognized as a swift and resilient operating system, built upon the Linux kernel. It is meticulously assembled using open-source software and flourishes thanks to the collective contributions of the Debian Project community. Embraced by many system administrators and industry professionals, Debian has emerged as the preferred distribution.',
+    duration: 'Aug 2023 - Oct 2023 * Remote',
   },
   {
     id: 3,
-    company: 'Centos',
+    company: 'Netvox Networks',
     achievements: ['CentOS 7', 'CentOS Stream 8', 'CentOS Stream 8'],
-    desc: 'CentOS, a free Linux distribution, remains fully functionally compatible with RHEL but lacks commercial support. CentOS generally offers comprehensive long-term support, along with dedicated efforts towards security and stability-focused development, ensuring ongoing maintenance updates for every major version.',
+    desc: 'duration',
   },
 ];

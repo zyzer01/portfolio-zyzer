@@ -18,15 +18,18 @@ const Experience = () => {
       </div>
       <div className="grid grid-cols-3 text-shade">
         <div>
-          <nav className="proggy text-2xl">
+          <nav className="proggy text-xl cursor-pointer">
             <ul className="flex flex-col space-y-4">
-              <li>Netvox</li>
-              <li>Netvox</li>
-              <li>Netvox</li>
+              {experience.map((item) => (
+                <li key={item.id}>{item.company}</li>
+              ))}
             </ul>
           </nav>
         </div>
-        <div className="col-span-2">Content</div>
+        <div className="col-span-2">
+          <h2 className="text-bright text-2xl font-medium">Software Engineer @ Lubesurgeons</h2>
+          <p>Aug 2023 - Oct 2023 * Remote</p>
+        </div>
       </div>
     </div>
   );
