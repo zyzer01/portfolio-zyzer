@@ -1,28 +1,9 @@
-import React from 'react';
 import Button from './ui/Button';
-import { FiGithub, FiLinkedin } from 'react-icons/fi';
-import { FaXTwitter, FaHashnode } from 'react-icons/fa6';
+import { socials, technologies } from '@/utils/items';
 import Link from 'next/link';
+import Marquee from 'react-fast-marquee';
 
 const Hero = () => {
-  const socials = [
-    {
-      icon: <FiGithub />,
-      href: 'https://github.com/zyzer01',
-    },
-    {
-      icon: <FaXTwitter />,
-      href: 'https://x.com/zyzer01',
-    },
-    {
-      icon: <FiLinkedin />,
-      href: 'https://linkedin.com/in/zyzer01',
-    },
-    {
-      icon: <FaHashnode />,
-      href: 'https://hashnode.com/@zyzer01',
-    },
-  ];
   return (
     <div className="grid grid-cols-5 font-sans md:px-24 py-24">
       <div className="hidden md:flex flex-col space-y-6">
@@ -38,16 +19,26 @@ const Hero = () => {
         <div className="flex flex-col space-y-6">
           <div>
             <p>Hi, my name is</p>
-            <h1 className="text-6xl font-medium my-3">David Onifade.</h1>
-            <h2 className="text-6xl">I build software solutions.</h2>
+            <h1 className="text-6xl font-bold my-3">David Onifade.</h1>
+            <h2 className="text-6xl font-medium text-shade">I build software solutions.</h2>
           </div>
           <h6>
-            I specialize in developing Frontend applications as a software engineer, with occasional
-            work on the backend and infrequent involvement in design. I take pride in delivering
-            applications that are not only efficient but also prioritize speed, accessibility, and
-            responsiveness.
+            I love web interativity a lot, so I specialize in developing Frontend applications as a
+            software engineer, with occasional work on the backend and infrequent involvement in
+            design. I take pride in delivering applications that are not only efficient but also
+            prioritize performance, accessibility, and responsiveness.
           </h6>
           <Button text="Resume" href="resume.pdf" />
+          {/* <div className="proggy pt-8"> */}
+          <Marquee>
+            {technologies.map((item, index) => (
+              <p key={index} className="flex items-center mr-5 text-xl proggy text-shade">
+                <span className={`mr-1.5 text-xl ${item.iconColor}`}>{item.icon}</span>
+                {item.name}
+              </p>
+            ))}
+          </Marquee>
+          {/* </div> */}
         </div>
       </div>
       <div className="hidden md:flex"></div>

@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['var(--font-inter)'],
+        manrope: ['var(--font-manrope)'],
         proggy: ['var(--font-proggy)'],
       },
       backgroundImage: {
