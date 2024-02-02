@@ -62,7 +62,6 @@ body {
   color: linear-gradient(to right, var(--color-primary), var(--color-secondary));
 }
 
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;

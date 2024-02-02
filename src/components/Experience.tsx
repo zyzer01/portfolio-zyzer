@@ -28,7 +28,15 @@ const Experience = () => {
         </div>
         <div className="col-span-2">
           <h2 className="text-bright text-2xl font-medium">Software Engineer @ Lubesurgeons</h2>
-          <p>Aug 2023 - Oct 2023 * Remote</p>
+          <p className="proggy pt-2 text-lg">Aug 2023 - Oct 2023 * Remote</p>
+          <ul className="list-none pt-3">
+            <li className="flex">
+              <span className="w-4 h-4 mr-4 bg-bright rounded-full"></span>
+              Worked closely with the interdisciplinary team to identify and rank features and
+              requirements. Created and executed unit tests and carried out system testing to
+              maintain the entire infrastructure quality.
+            </li>
+          </ul>
         </div>
       </div>
     </div>

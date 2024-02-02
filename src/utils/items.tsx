@@ -70,18 +70,21 @@ export const experience = [
   {
     id: 1,
     company: 'Lubesurgeons',
+    jobDescription: 'Software Engineer @ Lubesurgeons',
     achievements: ['Ubuntu Server 14', 'Ubuntu Server 16', 'Ubuntu Server 18', 'Ubuntu Server 20'],
     duration: 'Aug 2023 - Oct 2023 * Remote',
   },
   {
     id: 2,
     company: 'Cloudnetvox',
+    jobDescription: 'Software Engineer @ Lubesurgeons',
     achievements: ['Debian 10', 'Debian 11', 'Debian 12'],
     duration: 'Aug 2023 - Oct 2023 * Remote',
   },
   {
     id: 3,
     company: 'Netvox Networks',
+    jobDescription: 'Software Engineer @ Lubesurgeons',
     achievements: ['CentOS 7', 'CentOS Stream 8', 'CentOS Stream 8'],
     desc: 'duration',
   },
