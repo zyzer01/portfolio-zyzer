@@ -37,27 +37,31 @@ body {
 }
 
 .header-gradient {
-  background: -webkit-linear-gradient(
-    135deg,
-    var(--color-primary),
-    var(--color-secondary),
-    var(--color-primary),
-    var(--color-secondary)
-  );
-  background: linear-gradient(
-    -45deg,
-    var(--color-primary),
-    var(--color-secondary),
-    var(--color-primary),
-    var(--color-secondary)
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  /* -webkit-text-fill-color: transparent; */
-  background-size: 400% 400%;
-  -webkit-animation: gradient 3s ease infinite;
-  animation: gradient 3s ease infinite;
+  position: relative;
 }
+
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: moveGradient 3s ease infinite;
+}
+
+.gradient-hover {
+  color: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+}
+
 
 @layer utilities {
   .text-balance {
