@@ -71,21 +71,30 @@ export const experience = [
     id: 1,
     company: 'Lubesurgeons',
     jobDescription: 'Software Engineer @ Lubesurgeons',
-    achievements: ['Ubuntu Server 14', 'Ubuntu Server 16', 'Ubuntu Server 18', 'Ubuntu Server 20'],
+    achievements: [
+      'Worked closely with the interdisciplinary team to identify and rank features and requirements. Created and executed unit tests and carried out system testing to maintain the entire infrastructure quality.',
+      'Worked closely with the interdisciplinary team to identify and rank features and requirements. Created and executed unit tests and carried out system testing to maintain the entire infrastructure quality.',
+    ],
     duration: 'Aug 2023 - Oct 2023 * Remote',
   },
   {
     id: 2,
     company: 'Cloudnetvox',
-    jobDescription: 'Software Engineer @ Lubesurgeons',
-    achievements: ['Debian 10', 'Debian 11', 'Debian 12'],
+    jobDescription: 'Frontend Developer @ Lubesurgeons',
+    achievements: [
+      'Worked closely with the interdisciplinary team to identify and rank features and requirements. Created and executed unit tests and carried out system testing to maintain the entire infrastructure quality.',
+      'Worked closely with the interdisciplinary team to identify and rank features and requirements. Created and executed unit tests and carried out system testing to maintain the entire infrastructure quality.',
+    ],
     duration: 'Aug 2023 - Oct 2023 * Remote',
   },
   {
     id: 3,
     company: 'Netvox Networks',
-    jobDescription: 'Software Engineer @ Lubesurgeons',
-    achievements: ['CentOS 7', 'CentOS Stream 8', 'CentOS Stream 8'],
+    jobDescription: 'Developer @ Lubesurgeons',
+    achievements: [
+      'Worked closely with the interdisciplinary team to identify and rank features and requirements. Created and executed unit tests and carried out system testing to maintain the entire infrastructure quality.',
+      'Worked closely with the interdisciplinary team to identify and rank features and requirements. Created and executed unit tests and carried out system testing to maintain the entire infrastructure quality.',
+    ],
     desc: 'duration',
   },
 ];

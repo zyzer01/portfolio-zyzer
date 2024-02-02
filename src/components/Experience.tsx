@@ -18,25 +18,38 @@ const Experience = () => {
       </div>
       <div className="grid grid-cols-3 text-shade">
         <div>
-          <nav className="proggy text-xl cursor-pointer">
+          <nav className="proggy text-xl">
             <ul className="flex flex-col space-y-4">
-              {experience.map((item) => (
-                <li key={item.id}>{item.company}</li>
+              {experience.map((tab) => (
+                <li
+                  key={tab.id}
+                  onClick={() => handleTabClick(tab.company)}
+                  className={`cursor-pointer hover:bg-shade py-2 ${
+                    activeTab === tab.company
+                      ? 'text-domain border-domain font-medium'
+                      : 'hover:border-domain grayscale'
+                  }`}>
+                  {tab.company}
+                </li>
               ))}
             </ul>
           </nav>
         </div>
         <div className="col-span-2">
-          <h2 className="text-bright text-2xl font-medium">Software Engineer @ Lubesurgeons</h2>
-          <p className="proggy pt-2 text-lg">Aug 2023 - Oct 2023 * Remote</p>
-          <ul className="list-none pt-3">
-            <li className="flex">
-              <span className="w-4 h-4 mr-4 bg-bright rounded-full"></span>
-              Worked closely with the interdisciplinary team to identify and rank features and
-              requirements. Created and executed unit tests and carried out system testing to
-              maintain the entire infrastructure quality.
-            </li>
-          </ul>
+          {experience.map((item) => (
+            <div key={item.id}>
+              <h2 className="text-bright text-2xl font-medium">{item.jobDescription}</h2>
+              <p className="proggy pt-2 text-lg">{item.duration}</p>
+              <ul className="list-none pt-3">
+                {item.achievements.map((point) => (
+                  <li className="flex pb-4">
+                    <span className="mt-1.5 w-6 h-2 mr-4 bg-bright"></span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </div>
