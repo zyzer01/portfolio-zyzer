@@ -40,9 +40,9 @@ const Experience = () => {
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={item.id}
-                    initial={{ opacity: 0, x: 0 }} // Initial position and opacity
-                    animate={{ opacity: 1, x: 100 }} // Animation when component is rendered
-                    exit={{ opacity: 0, x: 100 }} // Animation when component is removed
+                    // initial={{ opacity: 0, x: 0 }}
+                    // animate={{ opacity: 1, x: 100 }}
+                    // exit={{ opacity: 0, x: 100 }}
                     transition={{ duration: 0.5 }} // Duration of the animation
                   >
                     <div>
