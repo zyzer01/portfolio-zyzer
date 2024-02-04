@@ -99,3 +99,17 @@ export const experience: ExperienceItem[] = [
     duration: 'Aug 2023 - Oct 2023 * Remote',
   },
 ];
+
+export const projects = [
+  {
+    id: 1,
+    name: 'Lubesurgeons',
+    color: 'from-yellow-600',
+    description:
+      'Lubesurgeons is a platform that provides convenience with its on-demand automobile repair service. You can get swift and expert car care services delivered to your location. Enjoy transparent pricing, skilled technicians, and a seamless user experience, all at your fingertips.',
+    repository: 'https://github.com/zyzer01/lubesurgeons',
+    liveLink: 'https://lubesurgeons.com',
+    isLive: true,
+    technologies: 'Next.js • Typescript • Supabase • TailwindCSS • Framer motion •  ',
+  },
+];

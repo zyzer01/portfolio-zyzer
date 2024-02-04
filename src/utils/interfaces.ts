@@ -4,7 +4,6 @@ export interface ButtonProps {
 }
 
 export interface HeadingProps {
-  topic: string;
-  subTopic?: string;
-  href: string;
+  projectName: string;
+  color: string;
 }

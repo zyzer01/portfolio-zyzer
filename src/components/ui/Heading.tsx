@@ -1,14 +1,13 @@
 import { HeadingProps } from '@/utils/interfaces';
-import Link from 'next/link';
 
-const Heading: React.FC<HeadingProps> = ({ topic, subTopic, href }) => {
+const Heading: React.FC<HeadingProps> = ({ projectName, color }) => {
   return (
-    <div>
-      <h1 className="text-4xl">{topic}</h1>
-      <Link href={href}>
-        <p>{subTopic}</p>
-      </Link>
-    </div>
+    <h3 className="text-2xl font-bold my-3">
+      <span
+        className={`bg-clip-text text-transparent bg-gradient-to-r ${color} to-bright animate-gradient`}>
+        {projectName}
+      </span>
+    </h3>
   );
 };
 

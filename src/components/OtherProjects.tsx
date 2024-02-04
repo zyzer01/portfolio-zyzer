@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import React from 'react';
 import { MdOutlineArrowOutward } from 'react-icons/md';
 import { CiFolderOn } from 'react-icons/ci';
 import { FiGithub } from 'react-icons/fi';

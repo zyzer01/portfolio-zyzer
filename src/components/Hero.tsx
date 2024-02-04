@@ -31,7 +31,7 @@ const Hero = () => {
             David Onifade.
           </span>
         </h1>
-        <h2 className="text-6xl font-medium text-shade">I build software solutions.</h2>
+        <h2 className="text-6xl font-bold text-shade">I build software solutions.</h2>
       </div>
       <h6>
         I love web interativity a lot, so I focus more in building Frontend applications as a
