@@ -110,6 +110,6 @@ export const projects = [
     repository: 'https://github.com/zyzer01/lubesurgeons',
     liveLink: 'https://lubesurgeons.com',
     isLive: true,
-    technologies: 'Next.js • Typescript • Supabase • TailwindCSS • Framer motion •  ',
+    technologies: 'React.js • Typescript • Supabase • TailwindCSS • Framer motion • Express.js ',
   },
 ];
