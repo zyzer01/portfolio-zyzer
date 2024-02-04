@@ -35,9 +35,8 @@ const Projects = () => {
             </div>
             <p className="text-shade my-4">{item.description}</p>
             <p className="flex proggy text-lg text-shade">
-              <span>{item.technologies} </span>
+              <span>{item.technologies}</span>
             </p>
-
             <div className="flex text-xl space-x-2 text-shade">
               <Link href={item.repository}>
                 <p className="hover:scale-125 transition ease-in-out duration-300">
