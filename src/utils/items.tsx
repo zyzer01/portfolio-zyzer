@@ -176,4 +176,37 @@ export const otherProjects = [
     isLive: true,
     isOnGithub: true,
   },
+  {
+    id: 2,
+    name: 'Flight Booker',
+    description:
+      'Lubesurgeons is a platform that provides convenience with its on-demand automobile repair service.',
+    technologies: 'React.js • Javascript • Tailwindcss',
+    repository: 'https://github.com/zyzer01/travel-app',
+    liveLink: 'https://travel-app-zyzer01.vercel.app',
+    isLive: true,
+    isOnGithub: true,
+  },
+  {
+    id: 2,
+    name: 'Flight Booker',
+    description:
+      'Lubesurgeons is a platform that provides convenience with its on-demand automobile repair service.',
+    technologies: 'React.js • Javascript • Tailwindcss',
+    repository: 'https://github.com/zyzer01/travel-app',
+    liveLink: 'https://travel-app-zyzer01.vercel.app',
+    isLive: true,
+    isOnGithub: true,
+  },
+  {
+    id: 2,
+    name: 'Flight Booker',
+    description:
+      'Lubesurgeons is a platform that provides convenience with its on-demand automobile repair service.',
+    technologies: 'React.js • Javascript • Tailwindcss',
+    repository: 'https://github.com/zyzer01/travel-app',
+    liveLink: 'https://travel-app-zyzer01.vercel.app',
+    isLive: true,
+    isOnGithub: true,
+  },
 ];

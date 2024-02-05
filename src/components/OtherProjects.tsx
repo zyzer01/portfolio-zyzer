@@ -19,7 +19,7 @@ const OtherProjects = () => {
         </Link>
       </div>
 
-      <div className="grid grid-cols-3 pt-16">
+      <div className="grid grid-cols-3 gap-8 pt-16">
         {otherProjects.map((item) => (
           <div className="border border-gray-600 border-dotted p-8 rounded">
             <div className="flex justify-between items-center text-shade">
