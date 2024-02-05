@@ -1,6 +1,7 @@
 'use client';
+
 import { motion, useAnimation } from 'framer-motion';
-import lubesurgeons1 from '/public/images/lubesurgeons.png';
+import lubesurgeons from '/public/images/lubesurgeons.png';
 import lubesurgeons2 from '/public/images/cloudnetvox.png';
 import Link from 'next/link';
 import { FiGithub } from 'react-icons/fi';
@@ -8,6 +9,7 @@ import { MdOutlineArrowOutward } from 'react-icons/md';
 import Heading from './ui/Heading';
 import { projects } from '@/utils/items';
 import Image from 'next/image';
+import FloatingPhone from './FloatingPhone';
 const Projects = () => {
   const hoverAnimation = useAnimation();
   return (
@@ -18,34 +20,12 @@ const Projects = () => {
 
       {projects.map((item) => (
         <div
-          className="grid grid-cols-2 gap-8 place-items-center border border-gray-600 border-dotted rounded p-8"
+          className="relative grid grid-cols-2 gap-8 place-items-center border border-gray-600 border-dotted rounded p-8"
           key={item.id}>
-          <motion.div
-            // ... other props
-            whileHover={{ scale: 1.05 }} // Optional: Add a subtle scale effect on hover
-          >
-            <div className="relative">
-              <img
-                src="/images/lubesurgeons.png"
-                alt=""
-                layout="fill"
-                className="absolute inset-0 z-0"
-              />
-              <motion.img
-                src="/images/cloudnetvox.png" // Replace with the actual hover image path
-                alt=""
-                layout="fill" // Assuming you want the hover image to fill the same space
-                className="absolute inset-0 z-10"
-                initial={{ y: 100 }}
-                animate={hoverAnimation}
-                variants={{
-                  hidden: { y: 100 },
-                  visible: { y: 0 },
-                }}
-              />
-            </div>
-            {/* ... other content */}
-          </motion.div>
+          <div>
+            <FloatingPhone imageSrc={lubesurgeons} bgColor="bg-lubesurgeons" />
+          </div>
+
           <div>
             <div className="flex items-center justify-between">
               <Heading projectName={item.name} color={item.color} />

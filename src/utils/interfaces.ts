@@ -7,3 +7,9 @@ export interface HeadingProps {
   projectName: string;
   color: string;
 }
+
+export interface PhoneProps {
+  imageSrc: any;
+  bgColor: string;
+  hasTopBanner?: boolean;
+}

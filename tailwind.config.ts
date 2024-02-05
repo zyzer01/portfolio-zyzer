@@ -21,6 +21,8 @@ const config: Config = {
         secondary: '#662D8C',
         bright: '#FEFEFE',
         shade: '#8D8D8D',
+        cloudnetvox: '#06155A',
+        lubesurgeons: '#FF9F15',
       },
     },
   },
