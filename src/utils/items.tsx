@@ -229,3 +229,36 @@ export const otherProjects = [
     isOnGithub: true,
   },
 ];
+
+export const archive = [
+  {
+    id: 1,
+    title: 'Wellness AI',
+    year: 2023,
+    technologies: 'Next.js • Typescript • GPT 3.5',
+    repository: 'https://github.com/zyzer01/wellness-ai',
+    liveLink: 'https://wellnessai.vercel.app',
+    isLive: true,
+    isOnGithub: true,
+  },
+  {
+    id: 2,
+    title: 'TodoList Curator',
+    year: 2022,
+    technologies: 'Node.js (express) • EJS • MongoDB',
+    repository: 'https://github.com/Zyzer01/Todolist',
+    liveLink: '',
+    isLive: false,
+    isOnGithub: true,
+  },
+  {
+    id: 2,
+    title: 'Basic Node Authentication',
+    year: 2022,
+    technologies: 'Node.js (express) • EJS • MongoDB',
+    repository: 'https://github.com/Zyzer01/Todolist',
+    liveLink: '',
+    isLive: false,
+    isOnGithub: true,
+  },
+];

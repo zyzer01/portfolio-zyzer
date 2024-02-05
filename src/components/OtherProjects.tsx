@@ -3,6 +3,7 @@ import { MdOutlineArrowOutward } from 'react-icons/md';
 import { CiFolderOn } from 'react-icons/ci';
 import { FiGithub } from 'react-icons/fi';
 import { otherProjects } from '@/utils/items';
+import Button from './ui/Button';
 
 const OtherProjects = () => {
   return (
@@ -10,7 +11,7 @@ const OtherProjects = () => {
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold">Some Other Standout Projects</h1>
         <Link href="/archive">
-          <p className="pt-5 proggy text-shade text-xl">
+          <p className="pt-5 proggy text-shade text-xl hover:text-gray-300 transition ease">
             explore the archive{' '}
             <span className="inline-block text-xl -mb-1">
               <MdOutlineArrowOutward />
@@ -50,6 +51,9 @@ const OtherProjects = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="pt-16 flex justify-center">
+        <Button text="See Archive" href="/archive" />
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ const About = () => {
       <div className="mb-14 border-b pb-6 border-gray-700 border-dotted">
         <h1 className="text-3xl md:text-4xl font-bold">About Me</h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
         <div>
           <p className="text-shade">
             Experienced software developer with 3+ years' expertise in enterprise application
@@ -23,17 +23,12 @@ const About = () => {
             player, and dedicated to open-source contributions for industry advancement.
           </p>
         </div>
-        <div className="relative rounded-lg transform group hover:-translate-x-4 hover:-translate-y-4 transition-all ease duration-300">
+        <div className="group">
           <Image
             src={zyzer}
             alt="David Onifade smiling with his teeth out"
-            className="grayscale group-hover:filter-none"
+            className="grayscale group-hover:filter-none border border-shade rounded p-4 group-hover:transform group-hover:scale-105 transition-all ease cursor-pointer"
           />
-          <div
-            className="absolute inset-0 z-[-1] border-2 border-gray-500 rounded-lg"
-            style={{
-              borderImage: 'linear-gradient(45deg, #959595, #FEFEFE) 1',
-            }}></div>
         </div>
       </div>
     </div>
