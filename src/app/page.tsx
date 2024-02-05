@@ -1,5 +1,4 @@
 'use client';
-import { useEffect } from 'react';
 import { socials } from '@/utils/items';
 import Link from 'next/link';
 import Hero from '@/components/Hero';
@@ -10,19 +9,14 @@ import Projects from '@/components/Projects';
 import OtherProjects from '@/components/OtherProjects';
 import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
-import AnimatedMeshGradient from '@/components/AnimatedMeshGradient';
-import { Gradient } from '@/utils/gradient.js';
 
 const Home = () => {
-  useEffect(() => {
-    const gradient = new Gradient();
-    gradient.initGradient('#gradient-canvas');
-  }, []);
-
   return (
-    <div className="relative">
+    <div>
       <NavBar />
+      {/* gradient starts */}
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:to-primary before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-secondary after:via-fuchsia-700 after:blur-2xl after:content-[''] before:h-[360px] z-[-1] animate-bg-gradient"></div>
+      {/* gradient ends */}
       <div className="grid grid-cols-6 px-8 lg-px-16 xl:px-20">
         <div>
           <div className="hidden md:flex flex-col space-y-8 justify-center fixed top-0 bottom-0">
