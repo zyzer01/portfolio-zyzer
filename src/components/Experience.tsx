@@ -18,7 +18,7 @@ const Experience = () => {
       <div className="mb-14 border-b pb-6 border-gray-700 border-dotted">
         <h1 className="text-4xl font-bold">Experience</h1>
       </div>
-      <div className="grid grid-cols-3 gap-8 text-shade">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-shade">
         <div>
           <nav className="proggy text-xl">
             <ul className="flex flex-col space-y-4 transition-all ease duration-300">
@@ -36,7 +36,7 @@ const Experience = () => {
           </nav>
         </div>
 
-        <div className="col-span-2">
+        <div className="col-span-3 md:col-span-2">
           <AnimatePresence>
             <div>
               {activeItem && (

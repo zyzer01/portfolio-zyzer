@@ -13,7 +13,7 @@ const Projects = () => {
 
       {projects.map((item) => (
         <div
-          className="relative grid grid-cols-2 gap-8 place-items-center border border-gray-600 border-dotted rounded p-8 mb-24"
+          className="relative grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center border border-gray-600 border-dotted rounded p-8 mb-24"
           key={item.id}>
           {item.isReversed ? (
             <>

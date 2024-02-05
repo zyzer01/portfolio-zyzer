@@ -39,6 +39,7 @@ h6 {
 }
 
 body {
+  overflow-x: hidden;
   font-family: var(--font-manrope);
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

@@ -26,12 +26,12 @@ const Hero = () => {
             }}
           />
         </div>
-        <h1 className="text-6xl font-extrabold my-3">
+        <h1 className="text-5xl md:text-6xl font-extrabold my-3">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary animate-gradient">
             David Onifade.
           </span>
         </h1>
-        <h2 className="text-6xl font-bold text-shade">I build software solutions.</h2>
+        <h2 className="text-4xl md:text-6xl font-bold text-shade">I build software solutions.</h2>
       </div>
       <h6>
         I love web interativity a lot, so I focus more in building Frontend applications as a

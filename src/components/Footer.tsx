@@ -9,7 +9,7 @@ const Footer = () => {
           And That's a Wrap – Until Our Code Cross Paths Again!
         </h1>
       </div>
-      <div className="flex flex-col justify-center items-center space-y-6 md:px-32 text-shade">
+      <div className="flex flex-col justify-center items-center space-y-6 px-8 md:px-16 lg:px-32 text-shade">
         <p>
           Thanks for exploring my digital playground! If you've got a project that needs some tech
           love or just want to share a good coding joke, I'm all in!

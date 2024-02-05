@@ -8,7 +8,7 @@ const About = () => {
       <div className="mb-14 border-b pb-6 border-gray-700 border-dotted">
         <h1 className="text-4xl font-bold">About Me</h1>
       </div>
-      <div className="grid grid-cols-2 md:gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         <div>
           <p className="text-shade">
             Experienced software developer with 3+ years' expertise in enterprise application

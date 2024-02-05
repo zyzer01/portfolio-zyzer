@@ -12,10 +12,12 @@ import NavBar from '@/components/NavBar';
 
 const Home = () => {
   return (
-    <div>
+    <div className="relative">
       <NavBar />
       {/* gradient starts */}
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:to-primary before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-secondary after:via-fuchsia-700 after:blur-2xl after:content-[''] before:h-[360px] z-[-1] animate-bg-gradient"></div>
+      <div className="flex justify-end absolute top-0 right-0">
+        <div className="relative before:absolute before:h-[350px] before:w-[520px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:to-primary before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[200px] after:w-[260px] after:translate-x-1/3 after:bg-gradient-conic after:from-secondary after:via-fuchsia-700 after:blur-2xl after:content-[''] before:h-[360px] z-[-1] animate-bg-gradient"></div>
+      </div>
       {/* gradient ends */}
       <div className="grid grid-cols-6 px-8 lg-px-16 xl:px-20">
         <div>
@@ -29,7 +31,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-        <div className="col-start-2 col-span-4">
+        <div className="col-span-6 md:col-span-4">
           <Hero />
           <Spacer />
           <About />

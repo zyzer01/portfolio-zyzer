@@ -149,7 +149,7 @@ export const projects = [
   },
   {
     id: 3,
-    name: 'Cohost',
+    name: 'Cohosts',
     color: 'purple',
     phoneBgColor: 'purple',
     projectLogo: '/images/Cohosts-1-1.png',
