@@ -14,14 +14,12 @@ const Home = () => {
   return (
     <div className="relative">
       <NavBar />
-      {/* gradient starts */}
-      <div className="flex justify-end absolute top-0 right-0">
+      {/* <div className="flex justify-end absolute top-0 right-0">
         <div className="relative before:absolute before:h-[350px] before:w-[520px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:to-primary before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[200px] after:w-[260px] after:translate-x-1/3 after:bg-gradient-conic after:from-secondary after:via-fuchsia-700 after:blur-2xl after:content-[''] before:h-[360px] z-[-1] animate-bg-gradient"></div>
-      </div>
-      {/* gradient ends */}
-      <div className="grid grid-cols-6 px-8 lg-px-16 xl:px-20">
-        <div>
-          <div className="hidden md:flex flex-col space-y-8 justify-center fixed top-0 bottom-0">
+      </div> */}
+      <div className="grid grid-cols-6 place-content-between px-8 md:px-0">
+        <div className="justify-self-center">
+          <div className="hidden md:flex flex-col space-y-8 justify-center items-center fixed top-0 bottom-0">
             {socials.map((item, index) => (
               <Link href={item.href} key={index}>
                 <p className="text-xl hover:scale-125 transition ease-in-out duration-300">
@@ -55,6 +53,9 @@ const Home = () => {
               </p>
             </Link>
           </div>
+          {/* <div className="flex justify-end absolute bottom-0 left-0"> */}
+          {/* <div className="relative md:before:-bottom-32 md:before:-right-[500px] md:after:-bottom-20 md:after:right-32 before:absolute before:h-[350px] before:w-[520px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:to-primary before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[200px] after:w-[260px] after:translate-x-1/3 after:bg-gradient-conic after:from-secondary after:via-fuchsia-700 after:blur-2xl after:content-[''] before:h-[360px] z-[-1] animate-bg-gradient"></div> */}
+          {/* </div> */}
         </div>
       </div>
     </div>

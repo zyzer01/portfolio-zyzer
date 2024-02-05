@@ -145,7 +145,7 @@ export const projects = [
     liveLink: 'https://lubesurgeons.com',
     isLive: true,
     isOnGithub: true,
-    technologies: 'Next.js • Typescript • Supabase • TailwindCSS • Framer motion • Express.js ',
+    technologies: 'Next.js • Typescript • TailwindCSS • Framer motion • Express.js ',
   },
   {
     id: 3,

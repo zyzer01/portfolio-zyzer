@@ -16,7 +16,7 @@ const Experience = () => {
   return (
     <div>
       <div className="mb-14 border-b pb-6 border-gray-700 border-dotted">
-        <h1 className="text-4xl font-bold">Experience</h1>
+        <h1 className="text-3xl md:text-4xl font-bold">Experience</h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-shade">
         <div>
@@ -66,6 +66,9 @@ const Experience = () => {
           </AnimatePresence>
         </div>
       </div>
+      {/* <div className="flex justify-start -ml-64">
+        <div className="relative before:absolute before:h-[350px] before:w-[520px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:to-primary before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[200px] after:w-[260px] after:translate-x-1/3 after:bg-gradient-conic after:from-secondary after:via-fuchsia-700 after:blur-2xl after:content-[''] before:h-[360px] z-[-1] animate-bg-gradient"></div>
+      </div> */}
     </div>
   );
 };

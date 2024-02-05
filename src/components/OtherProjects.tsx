@@ -8,7 +8,7 @@ const OtherProjects = () => {
   return (
     <div>
       <div className="text-center">
-        <h1 className="text-4xl font-bold">Some Other Standout Projects</h1>
+        <h1 className="text-3xl md:text-4xl font-bold">Some Other Standout Projects</h1>
         <Link href="/archive">
           <p className="pt-5 proggy text-shade text-xl">
             explore the archive{' '}
@@ -21,7 +21,7 @@ const OtherProjects = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-16">
         {otherProjects.map((item) => (
-          <div className="border border-gray-600 border-dotted p-8 rounded">
+          <div className="border border-gray-600 border-dotted p-8 rounded" key={item.id}>
             <div className="flex justify-between items-center text-shade">
               <p className="text-5xl">
                 <CiFolderOn />

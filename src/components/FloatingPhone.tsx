@@ -22,7 +22,7 @@ const FloatingPhone: React.FC<PhoneProps> = ({ imageSrc, bgColor, hasTopBanner }
         initial={{
           transform: 'translateZ(8px) translateY(-2px)',
         }}
-        animate={{
+        whileInView={{
           transform: 'translateZ(32px) translateY(-8px)',
         }}
         transition={{
