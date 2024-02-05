@@ -54,7 +54,7 @@ const Experience = () => {
                     <ul className="list-none pt-3">
                       {activeItem.achievements.map((point, index) => (
                         <li key={index} className="flex pb-4">
-                          <span className="mt-1.5 w-6 h-2 mr-4 bg-bright"></span>
+                          <span className="mt-1.5 w-4 h-2 mr-4 bg-bright"></span>
                           {point}
                         </li>
                       ))}

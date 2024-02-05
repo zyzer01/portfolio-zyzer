@@ -15,6 +15,16 @@
   }
 }
 
+@layer components {
+	#gradient-canvas {
+		width: 100%;
+		height: 100%;
+		--gradient-color-1: #c3e4ff;
+		--gradient-color-2: #6ec3f4;
+		--gradient-color-3: #eae2ff;
+		--gradient-color-4: #b9beff;
+	}
+}
 
 h6 {
   color: #8D8D8D;
@@ -70,10 +80,36 @@ body {
 }
 
 
-.hover-effect {
-  position: relative;
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-.hovered {
-  transform: translateY(-100%);
+.animate-pulses {
+  animation: pulse 2s infinite alternate;
+}
+
+.animate-bg-gradient:before,
+.animate-bg-gradient:after {
+  background-size: 200% 200%;
+    animation: spreadGradient 5s infinite ease;
+}
+
+@keyframes spreadGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
