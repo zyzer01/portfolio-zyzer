@@ -36,7 +36,7 @@ const Home = () => {
           <Spacer />
           <Experience />
           <Spacer />
-          <Projects />
+          {/* <Projects /> */}
           <Spacer />
           <OtherProjects />
           <Spacer />

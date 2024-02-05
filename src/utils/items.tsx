@@ -132,7 +132,6 @@ export const projects = [
     isLive: true,
     isOnGithub: true,
     technologies: 'React.js • Typescript • Supabase • TailwindCSS • Framer motion • Express.js ',
-    isReversed: true,
   },
   {
     id: 2,
@@ -146,6 +145,7 @@ export const projects = [
     isLive: true,
     isOnGithub: true,
     technologies: 'Next.js • Typescript • TailwindCSS • Framer motion • Express.js ',
+    isReversed: true,
   },
   {
     id: 3,
@@ -160,7 +160,6 @@ export const projects = [
     isLive: true,
     isOnGithub: false,
     technologies: 'Wordpress • Elementor • Slider Revolution',
-    isReversed: true,
   },
 ];
 
