@@ -122,8 +122,8 @@ export const projects = [
   {
     id: 1,
     name: 'Lubesurgeons',
-    color: 'from-yellow-600',
-    phoneBgColor: 'bg-lubesurgeons',
+    color: 'yellow',
+    phoneBgColor: 'yellow',
     projectLogo: '/images/Lubesurgeons main logo.webp',
     description:
       'Lubesurgeons is a platform that provides convenience with its on-demand automobile repair service. You can get swift and expert car care services delivered to your location. Enjoy transparent pricing, skilled technicians, and a seamless user experience, all at your fingertips.',
@@ -134,33 +134,46 @@ export const projects = [
     technologies: 'React.js • Typescript • Supabase • TailwindCSS • Framer motion • Express.js ',
     isReversed: true,
   },
-  // {
-  //   id: 2,
-  //   name: 'Cloudnetvox',
-  //   color: 'from-blue-600',
-  //   phoneBgColor: 'bg-cloudnetvox',
-  //   projectLogo: '/images/cloudnetvox logo.png',
-  //   description:
-  //     'Lubesurgeons is a platform that provides convenience with its on-demand automobile repair service. You can get swift and expert car care services delivered to your location. Enjoy transparent pricing, skilled technicians, and a seamless user experience, all at your fingertips.',
-  //   repository: 'https://github.com/zyzer01/cloudnetvox-new',
-  //   liveLink: 'https://lubesurgeons.com',
-  //   isLive: true,
-  //   isOnGithub: true,
-  //   technologies: 'React.js • Typescript • Supabase • TailwindCSS • Framer motion • Express.js ',
-  // },
-  // {
-  //   id: 3,
-  //   name: 'Cohost',
-  //   color: 'from-blue-600',
-  //   phoneBgColor: 'bg-cohost',
-  //   projectLogo: '/images/Cohosts-1-1.png',
-  //   description:
-  //     'Lubesurgeons is a platform that provides convenience with its on-demand automobile repair service. You can get swift and expert car care services delivered to your location. Enjoy transparent pricing, skilled technicians, and a seamless user experience, all at your fingertips.',
-  //   repository: 'https://github.com/zyzer01/cloudnetvox-new',
-  //   liveLink: 'https://lubesurgeons.com',
-  //   isLive: true,
-  //   isOnGithub: true,
-  //   technologies: 'Wordpress • Elementor • Slider Revolution',
-  //   isReversed: true,
-  // },
+  {
+    id: 2,
+    name: 'Cloudnetvox',
+    color: 'blue',
+    phoneBgColor: 'blue',
+    projectLogo: '/images/cloudnetvox logo.png',
+    description: 'Cloudnetvox is a leading domains and web hosting provider',
+    repository: 'https://github.com/zyzer01/cloudnetvox-new',
+    liveLink: 'https://lubesurgeons.com',
+    isLive: true,
+    isOnGithub: true,
+    technologies: 'React.js • Typescript • Supabase • TailwindCSS • Framer motion • Express.js ',
+  },
+  {
+    id: 3,
+    name: 'Cohost',
+    color: 'purple',
+    phoneBgColor: 'purple',
+    projectLogo: '/images/Cohosts-1-1.png',
+    description:
+      'Cohost is a UK Real Estate agency that offer higher rental income as well as flexible letting (short, medium, and long let). CoHosts handles everything from booking to check-out, housekeeping and maintenance.',
+    repository: 'https://github.com/zyzer01/cloudnetvox-new',
+    liveLink: 'https://lubesurgeons.com',
+    isLive: true,
+    isOnGithub: false,
+    technologies: 'Wordpress • Elementor • Slider Revolution',
+    isReversed: true,
+  },
+];
+
+export const otherProjects = [
+  {
+    id: 1,
+    name: 'Flight Booker',
+    description:
+      'Lubesurgeons is a platform that provides convenience with its on-demand automobile repair service.',
+    technologies: 'React.js • Javascript • Tailwindcss',
+    repository: 'https://github.com/zyzer01/travel-app',
+    liveLink: 'https://travel-app-zyzer01.vercel.app',
+    isLive: true,
+    isOnGithub: true,
+  },
 ];

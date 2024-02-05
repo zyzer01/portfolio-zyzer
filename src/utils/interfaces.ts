@@ -8,6 +8,10 @@ export interface HeadingProps {
   color: string;
 }
 
+export interface ColorVariants {
+  [key: string]: string;
+}
+
 export interface PhoneProps {
   imageSrc: any;
   bgColor: string;

@@ -1,10 +1,15 @@
+'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FiBatteryCharging, FiWifi } from 'react-icons/fi';
-import { PhoneProps } from '@/utils/interfaces';
+import { ColorVariants, PhoneProps } from '@/utils/interfaces';
 
 const FloatingPhone: React.FC<PhoneProps> = ({ imageSrc, bgColor, hasTopBanner }) => {
-  console.log(bgColor);
+  const colorVariants: ColorVariants = {
+    yellow: 'bg-lubesurgeons',
+    blue: 'bg-cloudnetvox',
+    purple: 'bg-cohost',
+  };
 
   return (
     <div
@@ -12,7 +17,7 @@ const FloatingPhone: React.FC<PhoneProps> = ({ imageSrc, bgColor, hasTopBanner }
         transformStyle: 'preserve-3d',
         transform: 'rotateY(-30deg) rotateX(15deg)',
       }}
-      className={`rounded-[24px] ${bgColor}`}>
+      className={`rounded-[24px] ${colorVariants[bgColor]}`}>
       <motion.div
         initial={{
           transform: 'translateZ(8px) translateY(-2px)',
@@ -36,10 +41,12 @@ const FloatingPhone: React.FC<PhoneProps> = ({ imageSrc, bgColor, hasTopBanner }
           </button>
 
           {hasTopBanner && (
-            <div className={`absolute -left-32 -top-32 h-64 w-64 rounded-full ${bgColor}`} />
+            <div
+              className={`absolute -left-32 -top-32 h-64 w-64 rounded-full ${colorVariants[bgColor]}`}
+            />
           )}
           <div
-            className={`absolute -bottom-72 left-[50%] h-96 w-96 -translate-x-[50%] rounded-full ${bgColor}`}
+            className={`absolute -bottom-72 left-[50%] h-96 w-96 -translate-x-[50%] rounded-full ${colorVariants[bgColor]}`}
           />
         </div>
       </motion.div>
