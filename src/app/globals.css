@@ -68,3 +68,12 @@ body {
 .gradient-hover {
   color: linear-gradient(to right, var(--color-primary), var(--color-secondary));
 }
+
+
+.hover-effect {
+  position: relative;
+}
+
+.hovered {
+  transform: translateY(-100%);
+}

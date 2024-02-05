@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
 import lubesurgeons1 from '/public/images/lubesurgeons.png';
 import lubesurgeons2 from '/public/images/cloudnetvox.png';
 import Link from 'next/link';
@@ -8,10 +8,8 @@ import { MdOutlineArrowOutward } from 'react-icons/md';
 import Heading from './ui/Heading';
 import { projects } from '@/utils/items';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 const Projects = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
+  const hoverAnimation = useAnimation();
   return (
     <div>
       <div className="mb-14 border-b pb-6 border-gray-700 border-dotted">
@@ -22,27 +20,32 @@ const Projects = () => {
         <div
           className="grid grid-cols-2 gap-8 place-items-center border border-gray-600 border-dotted rounded p-8"
           key={item.id}>
-          <div className="hover-effect w-full">
-            {/* <motion.div
-              className="hover-effect w-full relative overflow-hidden"
-              style={{ height: '100%' }}>
+          <motion.div
+            // ... other props
+            whileHover={{ scale: 1.05 }} // Optional: Add a subtle scale effect on hover
+          >
+            <div className="relative">
               <img
                 src="/images/lubesurgeons.png"
-                alt={'alt'}
-                className="absolute top-0 left-0 w-full h-full transition-transform duration-300"
+                alt=""
+                layout="fill"
+                className="absolute inset-0 z-0"
               />
               <motion.img
-                src="/images/cloudnetvox.png"
-                alt={'alt'}
-                className="absolute top-full left-0 w-full h-full transition-transform duration-300"
-                initial={{ translateY: '100%' }}
-                whileHover={{ translateY: '0%' }}
+                src="/images/cloudnetvox.png" // Replace with the actual hover image path
+                alt=""
+                layout="fill" // Assuming you want the hover image to fill the same space
+                className="absolute inset-0 z-10"
+                initial={{ y: 100 }}
+                animate={hoverAnimation}
+                variants={{
+                  hidden: { y: 100 },
+                  visible: { y: 0 },
+                }}
               />
-            </motion.div> */}
-            <motion.div initial={{ translateY: '0%' }} whileHover={{ translateY: '100%' }}>
-              <Image src={lubesurgeons1} alt="" />
-            </motion.div>
-          </div>
+            </div>
+            {/* ... other content */}
+          </motion.div>
           <div>
             <div className="flex items-center justify-between">
               <Heading projectName={item.name} color={item.color} />
