@@ -1,9 +1,11 @@
 import { FiGithub, FiLinkedin } from 'react-icons/fi';
 import { FaXTwitter, FaHashnode, FaCss3Alt } from 'react-icons/fa6';
-import { BiLogoTypescript } from 'react-icons/bi';
-import { IoLogoJavascript } from 'react-icons/io5';
+import { BiLogoTypescript, BiLogoPostgresql } from 'react-icons/bi';
+import { IoLogoJavascript, IoLogoFirebase } from 'react-icons/io5';
 import { FaNodeJs, FaHtml5, FaReact, FaPython, FaWordpress, FaLinux } from 'react-icons/fa';
 import { CgFramer } from 'react-icons/cg';
+import { RiSupabaseFill } from 'react-icons/ri';
+import { DiMongodb } from 'react-icons/di';
 import { ExperienceItem } from './types';
 
 export const socials = [
@@ -56,6 +58,22 @@ export const technologies = [
   {
     name: 'Wordpress',
     icon: <FaWordpress />,
+  },
+  {
+    name: 'Firebase',
+    icon: <IoLogoFirebase />,
+  },
+  {
+    name: 'Supabase',
+    icon: <RiSupabaseFill />,
+  },
+  {
+    name: 'MongoDB',
+    icon: <DiMongodb />,
+  },
+  {
+    name: 'PostgreSQL',
+    icon: <BiLogoPostgresql />,
   },
   {
     name: 'Linux',

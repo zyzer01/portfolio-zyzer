@@ -61,8 +61,8 @@ body {
 }
 
 .animate-gradient {
-  background-size: 200% 200%;
-  animation: moveGradient 3s ease infinite;
+  background-size: 300% 300%;
+  animation: moveGradient 4s ease infinite;
 }
 
 .gradient-hover {
