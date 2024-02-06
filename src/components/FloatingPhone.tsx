@@ -38,7 +38,7 @@ const FloatingPhone: React.FC<PhoneProps> = ({ imageSrc, bgColor, hasTopBanner }
           duration: 2,
           ease: 'easeInOut',
         }}
-        className="relative h-96 w-56 rounded-[24px] border-2 border-b-4 border-r-4 border-white border-l-neutral-200 border-t-neutral-200 bg-neutral-900 p-1 pl-[3px] pt-[3px]">
+        className="relative h-72 w-40 md:h-96 md:w-56 rounded-[24px] border-2 border-b-4 border-r-4 border-white border-l-neutral-200 border-t-neutral-200 bg-neutral-900 p-1 pl-[3px] pt-[3px]">
         <HeaderBar />
         <div className="relative z-0 grid h-full w-full place-content-center overflow-hidden rounded-[20px] bg-white">
           <Image src={imageSrc} alt={imageSrc} width={150} height={50} />
