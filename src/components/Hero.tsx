@@ -34,7 +34,7 @@ const Hero = () => {
         <h2 className="text-4xl md:text-6xl font-bold text-shade">I build software solutions.</h2>
       </div>
       <h6>
-        I love web interativity a lot, so I focus more in building Frontend applications as a
+        I love web interativity a lot, so I focus more on building Frontend applications as a
         software engineer, with occasional work on the backend and infrequent involvement in design.
         I take pride in delivering applications that are not only efficient but also prioritize
         performance, accessibility, and responsiveness.
