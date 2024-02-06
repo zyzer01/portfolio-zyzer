@@ -12,7 +12,7 @@ const OtherProjects = () => {
       <div className="text-center">
         <SectionHeading text="Some Other Standout Projects" />
         <Link href="/archive">
-          <p className="pt-5 proggy -mt-14 text-shade text-xl hover:text-gray-300 transition ease">
+          <p className="pt-5 proggy -mt-10 md:-mt-14 text-shade text-xl hover:text-gray-300 transition ease">
             explore the archive{' '}
             <span className="inline-block text-xl -mb-1">
               <MdOutlineArrowOutward />
