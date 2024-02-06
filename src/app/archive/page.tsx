@@ -26,7 +26,7 @@ const page = () => {
                 Archive
               </span>
             </h1>
-            <p className="proggy text-xl">Other Leisure Projects</p>
+            <p className="proggy text-xl">Other Leisure Projects.</p>
           </div>
           <div className="place-self-end">
             <Link href="/">

@@ -14,7 +14,6 @@ const Path: React.FC<PathProps> = ({ d, ...props }) => (
     {...props}
   />
 );
-
 interface MenuToggleProps {
   toggle: () => void;
 }
