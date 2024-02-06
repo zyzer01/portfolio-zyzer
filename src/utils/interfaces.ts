@@ -8,6 +8,10 @@ export interface HeadingProps {
   color: string;
 }
 
+export interface SectionHeadingProps {
+  text: string;
+}
+
 export interface ColorVariants {
   [key: string]: string;
 }

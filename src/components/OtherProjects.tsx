@@ -4,14 +4,15 @@ import { CiFolderOn } from 'react-icons/ci';
 import { FiGithub } from 'react-icons/fi';
 import { otherProjects } from '@/utils/items';
 import Button from './ui/Button';
+import SectionHeading from './ui/SectionHeading';
 
 const OtherProjects = () => {
   return (
     <div id="other-projects" className="pt-6">
       <div className="text-center">
-        <h1 className="text-3xl md:text-4xl font-bold">Some Other Standout Projects</h1>
+        <SectionHeading text="Some Other Standout Projects" />
         <Link href="/archive">
-          <p className="pt-5 proggy text-shade text-xl hover:text-gray-300 transition ease">
+          <p className="pt-5 proggy -mt-14 text-shade text-xl hover:text-gray-300 transition ease">
             explore the archive{' '}
             <span className="inline-block text-xl -mb-1">
               <MdOutlineArrowOutward />

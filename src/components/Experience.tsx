@@ -3,6 +3,7 @@
 import { experience } from '@/utils/items';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
+import SectionHeading from './ui/SectionHeading';
 
 const Experience = () => {
   const [activeTab, setActiveTab] = useState('Lubesurgeons');
@@ -15,9 +16,7 @@ const Experience = () => {
 
   return (
     <div id="experience" className="pt-6">
-      <div className="mb-14 border-b pb-6 border-gray-700 border-dotted">
-        <h1 className="text-3xl md:text-4xl font-bold">Experience</h1>
-      </div>
+      <SectionHeading text="Experience" />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-shade">
         <div>
           <nav className="proggy text-xl">
@@ -47,7 +46,7 @@ const Experience = () => {
                   exit={{ opacity: 0, x: 100 }}
                   transition={{ duration: 0.5 }}>
                   <div>
-                    <h2 className="text-bright text-2xl font-medium">
+                    <h2 className="text-bright text-xl md:text-2xl font-medium">
                       {activeItem.jobDescription}
                     </h2>
                     <p className="proggy pt-2 text-lg">{activeItem.duration}</p>
