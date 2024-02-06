@@ -4,6 +4,7 @@ import Link from 'next/link';
 interface MenuItemProps {
   name: string;
   color: string;
+  route: string;
   onClick: () => void;
 }
 
@@ -26,11 +27,11 @@ const variants: Variants = {
 
 const colors = ['#FF008C', '#D309E1', '#9C1AFF', '#7700FF', '#4400FF'];
 
-const MenuItem: React.FC<MenuItemProps> = ({ name, color, onClick }) => {
+const MenuItem: React.FC<MenuItemProps> = ({ name, color, route, onClick }) => {
   const style = { border: `2px solid ${color}` };
   return (
     <div className="list-items">
-      <Link href={}>
+      <Link href={route}>
         <motion.li
           variants={variants}
           whileHover={{ scale: 1.1 }}

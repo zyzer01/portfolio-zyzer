@@ -9,12 +9,22 @@ import Projects from '@/components/Projects';
 import OtherProjects from '@/components/OtherProjects';
 import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
+import Image from 'next/image';
+import logo from '/public/images/Lubesurgeons main logo.webp';
+import MenuBar from '@/components/MenuBar';
 
 const Home = () => {
   return (
     <div>
       <NavBar />
-
+      <div className="flex justify-between md:hidden items-center">
+        <div>
+          <MenuBar />
+        </div>
+        <div>
+          <Image src={logo} alt="Logo" width={150} height={70} />
+        </div>
+      </div>
       {/* <div className="flex justify-end absolute top-0 right-0">
         <div className="relative before:absolute before:h-[350px] before:w-[520px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:to-primary before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[200px] after:w-[260px] after:translate-x-1/3 after:bg-gradient-conic after:from-secondary after:via-fuchsia-700 after:blur-2xl after:content-[''] before:h-[360px] z-[-1] animate-bg-gradient"></div>
       </div> */}
@@ -35,13 +45,13 @@ const Home = () => {
           <Spacer />
           <About />
           <Spacer />
-          {/* <Experience /> */}
+          <Experience />
           <Spacer />
           {/* <Projects /> */}
           <Spacer />
-          {/* <OtherProjects /> */}
+          <OtherProjects />
           <Spacer />
-          {/* <Footer /> */}
+          <Footer />
           <Spacer />
         </div>
         <div>

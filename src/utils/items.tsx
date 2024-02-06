@@ -212,7 +212,7 @@ export const otherProjects = [
     name: 'HAA Group',
     description:
       'HAA provides a unique collection of magnificent properties to rent for short stays to guests traveling to and within the UK.',
-    technologies: 'Node.js (Express) • MongoDB • Javascript • EJS',
+    technologies: 'Wordpress • Elementor',
     repository: '',
     liveLink: 'https://ext.afiaoha.com',
     isLive: true,
@@ -243,6 +243,16 @@ export const archive = [
   },
   {
     id: 2,
+    title: 'Netvox',
+    year: 2021,
+    technologies: 'Wordpress • Elementor • Essential Addon',
+    repository: '',
+    liveLink: 'https://netvox.ng',
+    isLive: true,
+    isOnGithub: false,
+  },
+  {
+    id: 3,
     title: 'TodoList Curator',
     year: 2022,
     technologies: 'Node.js (express) • EJS • MongoDB',
@@ -252,7 +262,7 @@ export const archive = [
     isOnGithub: true,
   },
   {
-    id: 2,
+    id: 4,
     title: 'Basic Node Authentication',
     year: 2022,
     technologies: 'Node.js (express) • EJS • MongoDB',

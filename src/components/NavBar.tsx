@@ -1,8 +1,5 @@
 import Link from 'next/link';
 import React from 'react';
-import MenuBar from './MenuBar';
-import Image from 'next/image';
-import logo from '/public/images/Lubesurgeons main logo.webp';
 
 const NavBar = () => {
   return (
@@ -25,15 +22,6 @@ const NavBar = () => {
             <Link href="#about">Contact</Link>
           </li>
         </ul>
-      </div>
-
-      <div className="grid place-content-between md:hidden">
-        <div>
-          <Image src={logo} alt="Logo" width={150} height={70} />
-        </div>
-        <div>
-          <MenuBar />
-        </div>
       </div>
     </nav>
   );

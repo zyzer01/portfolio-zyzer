@@ -14,7 +14,7 @@ const Experience = () => {
   const activeItem = experience.find((item) => item.company === activeTab);
 
   return (
-    <div>
+    <div id="experience">
       <div className="mb-14 border-b pb-6 border-gray-700 border-dotted">
         <h1 className="text-3xl md:text-4xl font-bold">Experience</h1>
       </div>
@@ -37,7 +37,7 @@ const Experience = () => {
         </div>
 
         <div className="col-span-3 md:col-span-2">
-          <AnimatePresence>
+          <AnimatePresence mode="wait">
             <div>
               {activeItem && (
                 <motion.div
