@@ -4,15 +4,6 @@ import { FiGithub } from 'react-icons/fi';
 import { MdOutlineArrowOutward } from 'react-icons/md';
 import { IoMdArrowRoundBack } from 'react-icons/io';
 
-const Rows = ({ year, title, technologies, repository }) => {
-  <tr className="py-6">
-    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">{year}</td>
-    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">{title}</td>
-    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">{technologies}</td>
-    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">{repository}</td>
-  </tr>;
-};
-
 const page = () => {
   return (
     <div className="grid grid-cols-6 place-content-between px-8 md:px-0">
@@ -81,16 +72,16 @@ const page = () => {
                     <tbody className="divide-y divide-gray-200">
                       {archive.map((item) => (
                         <tr className="py-6">
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
                             {item.year}
                           </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
                             {item.title}
                           </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
+                          <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
                             {item.technologies}
                           </td>
-                          <td class="px-6 py-4 whitespace-nowrap text-gray-300 flex space-x-2">
+                          <td className="px-6 py-4 whitespace-nowrap text-gray-300 flex space-x-2">
                             {item.isOnGithub && (
                               <Link href={item.repository} target="_blank">
                                 <p className="hover:scale-125 transition ease-in-out duration-300">
