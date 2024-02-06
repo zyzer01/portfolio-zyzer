@@ -25,9 +25,9 @@ const Home = () => {
           <Image src={logo} alt="Logo" width={150} height={70} />
         </div>
       </div>
-      {/* <div className="flex justify-end absolute top-0 right-0">
+      <div className="flex justify-end absolute top-0 right-0">
         <div className="relative before:absolute before:h-[350px] before:w-[520px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:to-primary before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[200px] after:w-[260px] after:translate-x-1/3 after:bg-gradient-conic after:from-secondary after:via-fuchsia-700 after:blur-2xl after:content-[''] before:h-[360px] z-[-1] animate-bg-gradient"></div>
-      </div> */}
+      </div>
       <div className="grid grid-cols-6 place-content-between px-8 md:px-0">
         <div className="justify-self-center">
           <div className="hidden md:flex flex-col space-y-8 justify-center items-center fixed top-0 bottom-0">
@@ -47,7 +47,7 @@ const Home = () => {
           <Spacer />
           <Experience />
           <Spacer />
-          {/* <Projects /> */}
+          <Projects />
           <Spacer />
           <OtherProjects />
           <Spacer />
