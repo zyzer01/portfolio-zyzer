@@ -12,7 +12,7 @@ const Projects = () => {
 
       {projects.map((item) => (
         <div
-          className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center border border-gray-600 border-dotted rounded p-8 mb-24"
+          className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center border border-gray-600 border-dotted rounded p-8"
           key={item.id}>
           <div className={`${item.isReversed ? 'order-first lg:order-last' : 'order-first'}`}>
             <FloatingPhone imageSrc={item.projectLogo} bgColor={item.phoneBgColor} />
