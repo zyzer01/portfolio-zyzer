@@ -1,6 +1,7 @@
+'use client';
 import { useRef } from 'react';
 import { motion, sync, useCycle } from 'framer-motion';
-import { useDimensions } from '@/hooks/useDimension';
+// import { useDimensions } from '@/hooks/useDimension';
 import MenuToggle from './MenuToggle';
 import MenuItem from './MenuItem';
 
@@ -75,17 +76,17 @@ const listVariants = {
 const MenuBar = () => {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
-  const { height } = useDimensions(containerRef);
+  // const { height } = useDimensions(containerRef);
 
   const handleItemClick = () => {
-    toggleOpen(); // Close the menu when a menu item is clicked
+    toggleOpen();
   };
 
   return (
     <motion.nav
       initial={false}
       animate={isOpen ? 'open' : 'closed'}
-      custom={height}
+      // custom={height}
       ref={containerRef}
       className="menu-nav">
       <motion.div className="menu-background" variants={sidebar} />

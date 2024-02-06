@@ -3,7 +3,7 @@ import Button from './ui/Button';
 
 const Footer = () => {
   return (
-    <div className="flex-col justify-center items-center text-center" id="contact">
+    <div className="flex-col justify-center items-center text-center pt-16" id="contact">
       <div className="mb-12 border-b pb-6 border-gray-700 border-dotted">
         <h1 className="text-3xl md:text-4xl font-bold leading-relaxed">
           And That's a Wrap – <span className="text-2xl">Until Our Codes Cross Path Again! 🚀</span>

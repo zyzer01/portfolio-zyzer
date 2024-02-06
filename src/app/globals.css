@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('../styles/locomotive-scroll.css');
 @import url('../styles/menu.css');
 
 :root {

@@ -53,6 +53,7 @@ const Home = () => {
           <Spacer />
           <Footer />
           <Spacer />
+          <Spacer />
         </div>
         <div>
           <div className="hidden md:flex justify-center items-center fixed top-0 bottom-0">

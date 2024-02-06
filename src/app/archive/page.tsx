@@ -19,8 +19,8 @@ const page = () => {
         </div>
       </div>
       <div className="col-span-6 md:col-span-4">
-        <div className="py-32 flex justify-between items-center">
-          <div>
+        <div className="py-32 grid grid-cols-1 md:grid-cols-2 place-content-between">
+          <div className="order-last md:order-first">
             <h1 className="text-5xl md:text-6xl font-extrabold my-6">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary animate-gradient">
                 Archive
@@ -28,9 +28,9 @@ const page = () => {
             </h1>
             <p className="proggy text-xl">Other Leisure Projects</p>
           </div>
-          <div>
+          <div className="place-self-end">
             <Link href="/">
-              <button className="proggy group text-bright rounded border border-bright hover:bg-gray-500 hover:bg-opacity-25 duration-500 transition ease-in-out px-10 py-2 flex items-center">
+              <button className="proggy group text-bright rounded border border-bright hover:bg-gray-500 hover:bg-opacity-25 duration-500 transition ease-in-out px-10 py-2 flex items-center w-full">
                 <span className="inline-block text-xl mr-2 transition-transform group-hover:-translate-x-1">
                   <IoMdArrowRoundBack />
                 </span>
@@ -39,6 +39,7 @@ const page = () => {
             </Link>
           </div>
         </div>
+
         <div className="w-full">
           <div className="flex flex-col">
             <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -71,7 +72,7 @@ const page = () => {
                     </thead>
                     <tbody className="divide-y divide-gray-200">
                       {archive.map((item) => (
-                        <tr className="py-6">
+                        <tr className="py-6" key={item.id}>
                           <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
                             {item.year}
                           </td>
