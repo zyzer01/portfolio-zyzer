@@ -39,7 +39,7 @@ const Hero = () => {
         I take pride in delivering applications that are not only efficient but also prioritize
         performance, accessibility, and responsiveness.
       </h6>
-      <Button text="Resume" href="resume.pdf" />
+      {/* <Button text="Resume" href="resume.pdf" /> */}
       <div className="proggy pt-8">
         <Marquee>
           {technologies.map((item, index) => (
