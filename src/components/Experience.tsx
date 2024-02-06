@@ -14,7 +14,7 @@ const Experience = () => {
   const activeItem = experience.find((item) => item.company === activeTab);
 
   return (
-    <div id="experience">
+    <div id="experience" className="pt-6">
       <div className="mb-14 border-b pb-6 border-gray-700 border-dotted">
         <h1 className="text-3xl md:text-4xl font-bold">Experience</h1>
       </div>

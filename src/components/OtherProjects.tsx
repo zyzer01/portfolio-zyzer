@@ -7,7 +7,7 @@ import Button from './ui/Button';
 
 const OtherProjects = () => {
   return (
-    <div id="other-projects">
+    <div id="other-projects" className="pt-6">
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold">Some Other Standout Projects</h1>
         <Link href="/archive">

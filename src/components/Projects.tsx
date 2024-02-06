@@ -6,7 +6,7 @@ import { projects } from '@/utils/items';
 import FloatingPhone from './FloatingPhone';
 const Projects = () => {
   return (
-    <div id="projects">
+    <div id="projects" className="pt-6">
       <div className="mb-14 border-b pb-6 border-gray-700 border-dotted">
         <h1 className="text-4xl font-bold">Projects</h1>
       </div>
