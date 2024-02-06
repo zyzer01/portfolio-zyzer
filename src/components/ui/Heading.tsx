@@ -8,7 +8,7 @@ const Heading: React.FC<HeadingProps> = ({ projectName, color }) => {
   };
 
   return (
-    <h3 className="text-2xl font-bold my-3">
+    <h3 className="text-lg md:text-2xl font-bold my-3">
       <span
         className={`bg-clip-text text-transparent bg-gradient-to-r ${colorVariants[color]} animate-gradient`}>
         {projectName}
