@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className="flex-col justify-center items-center text-center" id="contact">
+    <div className="flex-col justify-center items-center text-center pt-8" id="contact">
       <div className="mb-12 border-b pb-6 border-gray-700 border-dotted">
         <h1 className="text-2xl md:text-4xl font-bold leading-relaxed">
           And That's a Wrap –{' '}
