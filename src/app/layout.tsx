@@ -39,15 +39,12 @@ export const metadata: Metadata = {
   },
   category: 'technology',
   openGraph: {
-    title: {
-      template: '%s | Software Developer',
-      default: 'David Onifade',
-    },
+    title: 'David Onifade | Software Developer',
     description:
       'Experienced software developer with 3+ years of expertise in standard web application development. Adept problem solver, dedicated to open-source contributions.',
     url: 'https://davidfola.vercel.app',
     siteName: 'David Onifade',
-    images: '/opengraph-image.png',
+    images: 'https://davidfola.vercel.app/opengraph-image.png',
     locale: 'en_US',
     type: 'website',
   },
