@@ -89,7 +89,7 @@ export const experience: ExperienceItem[] = [
   {
     id: 1,
     company: 'Lubesurgeons',
-    jobDescription: 'Software Engineer',
+    jobDescription: 'Frontend Engineer',
     achievements: [
       'Worked closely with the interdisciplinary team to identify and rank features and requirements. ',
       'Created and executed unit tests and carried out system testing to maintain the entire infrastructure quality.',
@@ -100,7 +100,7 @@ export const experience: ExperienceItem[] = [
   {
     id: 2,
     company: 'Netvox Networks',
-    jobDescription: 'Fullstack Developer',
+    jobDescription: 'Frontend Engineer',
     achievements: [
       'Worked closely with the interdisciplinary team to identify and rank features and requirements. ',
       'Created and executed unit tests and carried out system testing to maintain the entire infrastructure quality.',
