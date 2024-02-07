@@ -1,4 +1,3 @@
-'use client';
 import Button from './ui/Button';
 import { technologies } from '@/utils/items';
 import Marquee from 'react-fast-marquee';
@@ -34,12 +33,11 @@ const Hero = () => {
         <h2 className="text-4xl md:text-6xl font-bold text-shade">I build software solutions.</h2>
       </div>
       <h6>
-        I love web interativity a lot, so I focus more on building Frontend applications as a
-        software engineer, with occasional work on the backend and infrequent involvement in design.
-        I take pride in delivering applications that are not only efficient but also prioritize
-        performance, accessibility, and responsiveness.
+        I love web interativity a lot, so I focus more on building Frontend applications, with
+        occasional work on the backend. I take pride in delivering applications that are not only
+        efficient but also prioritize performance, accessibility, and responsiveness.
       </h6>
-      {/* <Button text="Resume" href="resume.pdf" /> */}
+      <Button text="Resume" href="resume.pdf" />
       <div className="proggy pt-8">
         <Marquee>
           {technologies.map((item, index) => (
