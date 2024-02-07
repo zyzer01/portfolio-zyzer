@@ -27,10 +27,10 @@ export const metadata: Metadata = {
   applicationName: 'David Onifade | Portfolio',
   referrer: 'origin-when-cross-origin',
   keywords: ['Porfolio', 'React', 'Nextjs'],
-  authors: [{ name: 'David', url: 'https://davidfola.dev' }],
+  authors: [{ name: 'David', url: 'https://davidfola.vercel.app' }],
   creator: 'David Onifade',
   publisher: 'David (Zyzer)',
-  metadataBase: new URL('https://davidfola.dev'),
+  metadataBase: new URL('https://davidfola.vercel.app'),
   alternates: {
     canonical: '/',
     languages: {
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     },
     description:
       'Experienced software developer with 3+ years of expertise in standard web application development. Adept problem solver, dedicated to open-source contributions.',
-    url: 'https://davidfola.dev',
+    url: 'https://davidfola.vercel.app',
     siteName: 'David Onifade',
     images: '/og-image.png',
     locale: 'en_US',
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     siteId: '1467726470533754880',
     creator: '@zyzer01',
     creatorId: '1467726470533754880',
-    images: ['https://davidfola.dev/og-image.png'], // Must be an absolute URL
+    images: ['https://davidfola.vercel.app/og-image.png'], // Must be an absolute URL
   },
 };
 
