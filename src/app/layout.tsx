@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import type { Viewport } from 'next'
+import type { Viewport } from 'next';
 import { Manrope } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
@@ -12,17 +12,17 @@ const proggy = localFont({
   variable: '--font-proggy',
 });
 
- 
 export const viewport: Viewport = {
   themeColor: 'black',
-}
+};
 
 export const metadata: Metadata = {
   title: {
     template: '%s | Software Developer',
     default: 'David Onifade',
   },
-  description: "Experienced software developer with 3+ years of expertise in standard web application development. Adept problem solver, dedicated to open-source contributions.",
+  description:
+    'Experienced software developer with 3+ years of expertise in standard web application development. Adept problem solver, dedicated to open-source contributions.',
   generator: 'David Onifade',
   applicationName: 'David Onifade | Portfolio',
   referrer: 'origin-when-cross-origin',
@@ -40,10 +40,11 @@ export const metadata: Metadata = {
   category: 'technology',
   openGraph: {
     title: {
-    template: '%s | Software Developer',
-    default: 'David Onifade',
-  },
-    description: 'Experienced software developer with 3+ years of expertise in standard web application development. Adept problem solver, dedicated to open-source contributions.',
+      template: '%s | Software Developer',
+      default: 'David Onifade',
+    },
+    description:
+      'Experienced software developer with 3+ years of expertise in standard web application development. Adept problem solver, dedicated to open-source contributions.',
     url: 'https://davidfola.dev',
     siteName: 'David Onifade',
     images: '/og-image.png',
@@ -51,22 +52,23 @@ export const metadata: Metadata = {
     type: 'website',
   },
   icons: {
-    icon: '/icon.png',
-    shortcut: '/shortcut-icon.png',
-    apple: '/apple-icon.png',
+    icon: '/favicon/icon.png',
+    shortcut: '/favicon/shortcut-icon.png',
+    apple: '/favicon/apple-icon.png',
     other: {
       rel: 'apple-touch-icon-precomposed',
-      url: '/apple-touch-icon-precomposed.png',
+      url: '/favicon/apple-icon.png',
     },
   },
   twitter: {
     card: 'summary_large_image',
     title: 'David Onifade | Software Developer',
-    description: 'Experienced software developer with 3+ years of expertise in standard web application development. Adept problem solver, dedicated to open-source contributions.',
+    description:
+      'Experienced software developer with 3+ years of expertise in standard web application development. Adept problem solver, dedicated to open-source contributions.',
     siteId: '1467726470533754880',
     creator: '@zyzer01',
     creatorId: '1467726470533754880',
-    images: ['https://davidfola.dev/og.png'], // Must be an absolute URL
+    images: ['https://davidfola.dev/og-image.png'], // Must be an absolute URL
   },
 };
 
