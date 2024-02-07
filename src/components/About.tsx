@@ -12,7 +12,7 @@ const About = () => {
         <div className="text-shade ">
           <p className="leading-relaxed">
             Hi, there! My name is David I'm an experienced software developer with 3+ years'
-            expertise in enterprise application development I'm currently building an enterprise
+            expertise in standard application development I'm currently building an enterprise
             application (news soon), proficient in a number of programming languages and tech tool.
           </p>
           <br />
