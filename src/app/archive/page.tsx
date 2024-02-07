@@ -10,7 +10,7 @@ const page = () => {
       <div className="justify-self-center">
         <div className="hidden md:flex flex-col space-y-8 justify-center items-center fixed top-0 bottom-0">
           {socials.map((item, index) => (
-            <Link href={item.href} key={index}>
+            <Link href={item.href} key={index} target="_blank">
               <p className="text-xl hover:scale-125 transition ease-in-out duration-300">
                 {item.icon}
               </p>
