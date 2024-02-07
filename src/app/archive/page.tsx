@@ -3,7 +3,11 @@ import Link from 'next/link';
 import { FiGithub } from 'react-icons/fi';
 import { MdOutlineArrowOutward } from 'react-icons/md';
 import { IoMdArrowRoundBack } from 'react-icons/io';
-
+import { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Archive',
+}
 const page = () => {
   return (
     <div className="grid grid-cols-6 place-content-between px-8 md:px-0">
