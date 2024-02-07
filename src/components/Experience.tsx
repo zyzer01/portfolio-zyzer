@@ -4,6 +4,7 @@ import { experience } from '@/utils/items';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import SectionHeading from './ui/SectionHeading';
+import Link from 'next/link';
 
 const Experience = () => {
   const [activeTab, setActiveTab] = useState('Lubesurgeons');
@@ -47,7 +48,12 @@ const Experience = () => {
                   transition={{ duration: 0.5 }}>
                   <div>
                     <h2 className="text-bright text-xl md:text-2xl font-medium">
-                      {activeItem.jobDescription}
+                      {activeItem.jobDescription}{' '}
+                      <span className="transition-all ease duration-300 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary lowercase">
+                        <Link href={activeItem.link} target="_blank">
+                          @{activeItem.company}
+                        </Link>
+                      </span>
                     </h2>
                     <p className="proggy pt-2 text-lg">{activeItem.duration}</p>
                     <ul className="list-none pt-3">

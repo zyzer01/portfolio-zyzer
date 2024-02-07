@@ -4,4 +4,5 @@ export type ExperienceItem = {
   jobDescription: string;
   duration: string;
   achievements: string[];
+  link: string;
 };

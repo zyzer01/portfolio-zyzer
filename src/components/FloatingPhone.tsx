@@ -41,14 +41,16 @@ const FloatingPhone: React.FC<PhoneProps> = ({ imageSrc, bgColor, hasTopBanner }
         className="relative h-80 w-48 md:h-96 md:w-56 rounded-[24px] border-2 border-b-4 border-r-4 border-white border-l-neutral-200 border-t-neutral-200 bg-neutral-900 p-1 pl-[3px] pt-[3px]">
         <HeaderBar />
         <div className="relative z-0 grid h-full w-full place-content-center overflow-hidden rounded-[20px] bg-white">
-          <Image src={imageSrc} alt={imageSrc} width={150} height={50} />
+          <Image src={imageSrc} alt={imageSrc} width={130} height={40} />
 
-          <button className="absolute bottom-4 left-4 right-4 z-10 rounded-lg border-[1px] bg-white py-2 text-xs font-medium text-blue-900 backdrop-blur">
+          <button className="absolute bottom-4 left-4 right-4 z-10 rounded-lg border-[1px] bg-white py-1.5 md:py-2 text-xs font-medium text-blue-900 backdrop-blur">
             Get Started
           </button>
 
           {hasTopBanner && (
-            <div className={`absolute -left-32 -top-32 h-64 w-64 rounded-full ${colorClass}`} />
+            <div
+              className={`absolute -left-32 -top-32 h-48 w-48 md:h-64 md:w-64 rounded-full ${colorClass}`}
+            />
           )}
           <div
             className={`absolute -bottom-72 left-[50%] h-96 w-96 -translate-x-[50%] rounded-full ${colorClass}`}

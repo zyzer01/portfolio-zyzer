@@ -89,32 +89,35 @@ export const experience: ExperienceItem[] = [
   {
     id: 1,
     company: 'Lubesurgeons',
-    jobDescription: 'Software Engineer @Lubesurgeons',
+    jobDescription: 'Software Engineer',
     achievements: [
       'Worked closely with the interdisciplinary team to identify and rank features and requirements. ',
       'Created and executed unit tests and carried out system testing to maintain the entire infrastructure quality.',
     ],
     duration: 'Aug 2023 - Oct 2023 * Remote',
+    link: 'https://lubesurgeons.com',
   },
   {
     id: 2,
     company: 'Netvox Networks',
-    jobDescription: 'Fullstack Developer @Netvox',
+    jobDescription: 'Fullstack Developer',
     achievements: [
       'Worked closely with the interdisciplinary team to identify and rank features and requirements. ',
       'Created and executed unit tests and carried out system testing to maintain the entire infrastructure quality.',
     ],
     duration: 'Nov 2022 - May 2023 * Hybrid',
+    link: 'https://netvox.ng',
   },
   {
     id: 3,
     company: 'Cloudnetvox',
-    jobDescription: 'Web Developer @Cloudnetvox',
+    jobDescription: 'Web Developer',
     achievements: [
       'Developed the entire Frontend from scratch for Cloudnetvox, identified and resolved software defects and issues, ensuring a seamless user experience.',
       'Played a pivotal role in advancing software development processes and best practices for continuous improvement.',
     ],
     duration: 'Aug 2023 - Oct 2023 * On-site',
+    link: 'https://cloudnetvox.com',
   },
 ];
 
