@@ -31,12 +31,12 @@ const About = () => {
               </Link>
             </span>{' '}
             actively engaging with the developer community to foster innovation and drive industry
-            advancement. Passionate about leveraging technology to create impactful solutions.
+            advancement. I'm Passionate about leveraging technology to create impactful solutions.
           </p>
           <br />
           <p>
-            I thrive in dynamic environments where I can apply my skills to solve complex challenges
-            and drive meaningful outcomes.
+            I thrive in dynamic environments where I can apply my skills to solve problems and drive
+            meaningful outcomes.
           </p>
         </div>
         <div className="group">
