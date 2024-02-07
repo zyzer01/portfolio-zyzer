@@ -23,7 +23,7 @@ const Footer = () => {
         </p>
         <Button href="mailto:davidicfola@gmail.com" text="Say Hello" />
       </div>
-      <div className="flex flex-row pt-20 justify-between">
+      <div className="md:hidden flex flex-row pt-36 justify-between">
         {socials.map((item, index) => (
           <Link href={item.href} key={index} target="_blank">
             <p className="text-xl hover:scale-125 transition ease-in-out duration-300">
@@ -32,7 +32,7 @@ const Footer = () => {
           </Link>
         ))}
       </div>
-      <div className="flex justify-start -ml-48 md:-ml-72 -mt-44">
+      <div className="flex justify-start -ml-48 md:-ml-72 -mt-60 md:-mt-44">
         <div className="relative before:absolute before:h-[350px] before:w-[520px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:to-pink-900 before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[200px] after:w-[260px] after:translate-x-1/3 after:bg-gradient-conic after:from-secondary after:via-fuchsia-700 after:blur-2xl after:content-[''] before:h-[360px] z-[-1] animate-bg-gradient"></div>
       </div>
     </div>

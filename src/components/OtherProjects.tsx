@@ -46,7 +46,7 @@ const OtherProjects = () => {
               </div>
             </div>
             <div className="flex flex-col space-y-2 pt-3">
-              <h3 className="text-xl font-bold">{item.name}</h3>
+              <h3 className="text-lg md:text-xl font-bold">{item.name}</h3>
               <p className="text-shade text-sm leading-relaxed">{item.description}</p>
               <p className="proggy text-shade pt-5">{item.technologies}</p>
             </div>
