@@ -142,7 +142,8 @@ export const projects = [
     color: 'blue',
     phoneBgColor: 'blue',
     projectLogo: '/images/cloudnetvox logo.png',
-    description: 'Cloudnetvox is a leading domains and web hosting provider',
+    description:
+      'Cloudnetvox is a leading domains and web hosting provider offering comprehensive suites of services tailored to meet the diverse needs of businesses and individuals alike with robust hosting solutions ',
     repository: 'https://github.com/zyzer01/cloudnetvox-new',
     liveLink: 'https://lubesurgeons.com',
     isLive: true,
