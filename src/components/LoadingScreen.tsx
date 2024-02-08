@@ -18,7 +18,7 @@ const LoadingScreen: React.FC<PageWrapperProps> = ({ children }) => {
   return loading ? (
     <div className="flex flex-col justify-center items-center h-screen">
       <div>
-        <Image src={gif} alt="preloader" />
+        <Image src={gif} alt="preloader" width={250} height={150} />
       </div>
     </div>
   ) : (
