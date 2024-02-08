@@ -4,7 +4,7 @@ import { Manrope } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
 import Link from 'next/link';
-import PageWrapper from '@/components/PageWrapper';
+import LoadingScreen from '@/components/LoadingScreen';
 
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope' });
 
@@ -79,18 +79,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.variable} ${proggy.variable}`}>
-        {children}
-        <div className="flex proggy justify-center">
-          <p className="text-shade">
-            Designed by{' '}
-            <span className="text-gray-300">
-              {' '}
-              <Link href="https://behance.net/olubummokolawole" target="_blank">
-                Kolawole Olubummo
-              </Link>{' '}
-            </span>
-          </p>
-        </div>
+        <LoadingScreen>
+          <div>
+            {children}
+            <div className="flex proggy justify-center">
+              <p className="text-shade">
+                Designed by{' '}
+                <span className="text-gray-300">
+                  {' '}
+                  <Link href="https://behance.net/olubummokolawole" target="_blank">
+                    Kolawole Olubummo
+                  </Link>{' '}
+                </span>
+              </p>
+            </div>
+          </div>
+        </LoadingScreen>
       </body>
     </html>
   );

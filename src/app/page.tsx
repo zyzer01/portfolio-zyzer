@@ -9,11 +9,14 @@ import Projects from '@/components/Projects';
 import OtherProjects from '@/components/OtherProjects';
 import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
-import Loadings from '@/components/Loadings';
+import { cubicBezier, motion } from 'framer-motion';
 
 const Home = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75, ease: 'easeIn' }}>
       <div className="flex justify-end mr-44">
         <div className="relative before:absolute md:before:h-[270px] md:before:w-[300px] before:h-[200px] before:w-[250px]  before:right-0 after:right-0 md:before:-right-48 md:after:-right-48 before:rounded-full before:bg-gradient-radial before:from-secondary before:to-pink-900 before:blur-2xl before:content-[''] after:absolute after:-z-20 md:after:h-[270px] md:after:w-[250px] after:h-[150px] after:w-[150px] after:bg-gradient-conic after:from-secondary after:via-fuchsia-700 after:blur-2xl after:content-[''] z-[-1] animate-bg-gradient"></div>
       </div>
@@ -57,7 +60,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default Home;
