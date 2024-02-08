@@ -4,6 +4,7 @@ import { Manrope } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
 import Link from 'next/link';
+import PageWrapper from '@/components/PageWrapper';
 
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope' });
 

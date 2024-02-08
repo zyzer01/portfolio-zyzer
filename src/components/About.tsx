@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Heading from './ui/Heading';
 import SectionHeading from './ui/SectionHeading';
-import zyzer from '/public/images/david onifade profile picture.png';
+import zyzer from '/public/images/portrait.jpg';
 import Image from 'next/image';
 
 const About = () => {
@@ -43,6 +43,8 @@ const About = () => {
         <div className="group">
           <Image
             src={zyzer}
+            width={370}
+            height={200}
             alt="David Onifade smiling with his teeth out"
             className="grayscale group-hover:filter-none border border-shade rounded p-4 group-hover:transform group-hover:scale-105 transition-all ease cursor-pointer"
           />
