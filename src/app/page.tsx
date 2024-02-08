@@ -9,6 +9,7 @@ import Projects from '@/components/Projects';
 import OtherProjects from '@/components/OtherProjects';
 import Footer from '@/components/Footer';
 import NavBar from '@/components/NavBar';
+import Loadings from '@/components/Loadings';
 
 const Home = () => {
   return (
