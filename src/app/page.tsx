@@ -46,7 +46,7 @@ const Home = () => {
           <Spacer />
         </div>
         <div>
-          <div className="hidden md:flex justify-center items-center fixed top-0 bottom-0">
+          <div className="hidden md:flex justify-center items-center fixed top-0 bottom-0 z-0">
             <Link href="mailto:davidicfola@gmail.com">
               <p className="transform rotate-90 proggy text-xl">
                 <span className="transition-all ease duration-300 hover:bg-clip-text text-bright hover:text-transparent hover:bg-gradient-to-r from-primary to-secondary">

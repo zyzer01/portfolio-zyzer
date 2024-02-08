@@ -3,18 +3,18 @@ import Link from 'next/link';
 import { FiGithub } from 'react-icons/fi';
 import { MdOutlineArrowOutward } from 'react-icons/md';
 import { IoMdArrowRoundBack } from 'react-icons/io';
-import { Metadata } from 'next'
- 
+import { Metadata } from 'next';
+
 export const metadata: Metadata = {
   title: 'Archive',
-}
+};
 const page = () => {
   return (
     <div className="grid grid-cols-6 place-content-between px-8 md:px-0">
       <div className="justify-self-center">
         <div className="hidden md:flex flex-col space-y-8 justify-center items-center fixed top-0 bottom-0">
           {socials.map((item, index) => (
-            <Link href={item.href} key={index} target="_blank">
+            <Link href={item.href} key={index}>
               <p className="text-xl hover:scale-125 transition ease-in-out duration-300">
                 {item.icon}
               </p>
