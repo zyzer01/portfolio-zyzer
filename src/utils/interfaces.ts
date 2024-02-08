@@ -1,3 +1,5 @@
+import { ReactNode } from 'react';
+
 export interface ButtonProps {
   text: string;
   href: string;
@@ -20,4 +22,8 @@ export interface PhoneProps {
   imageSrc: any;
   bgColor: string;
   hasTopBanner?: boolean;
+}
+
+export interface PageWrapperProps {
+  children: ReactNode;
 }
