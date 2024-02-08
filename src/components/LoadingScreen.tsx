@@ -1,6 +1,8 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { PageWrapperProps } from '@/utils/interfaces';
+import Image from 'next/image';
+import gif from '/public/images/zyzer.gif';
 
 const LoadingScreen: React.FC<PageWrapperProps> = ({ children }) => {
   const [loading, setLoading] = useState(true);
@@ -8,7 +10,7 @@ const LoadingScreen: React.FC<PageWrapperProps> = ({ children }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -16,7 +18,7 @@ const LoadingScreen: React.FC<PageWrapperProps> = ({ children }) => {
   return loading ? (
     <div className="flex flex-col justify-center items-center h-screen">
       <div>
-        <img src="/images/zyzer.gif" alt="svg" />
+        <Image src={gif} alt="preloader" />
       </div>
     </div>
   ) : (
