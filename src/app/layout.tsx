@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       'Experienced software developer with 3+ years of expertise in standard web application development. Adept problem solver, dedicated to open-source contributions.',
     url: 'https://davidfola.vercel.app',
     siteName: 'David Onifade',
-    images: 'https://davidfola.vercel.app/opengraph-image.png',
+    images: 'https://davidfola.vercel.app/opengraph-image.jpg',
     locale: 'en_US',
     type: 'website',
   },
@@ -66,8 +66,8 @@ export const metadata: Metadata = {
       'Experienced software developer with 3+ years of expertise in standard web application development. Adept problem solver, dedicated to open-source contributions.',
     siteId: '1467726470533754880',
     creator: '@zyzer01',
-    creatorId: '1467726470533754880',
-    images: ['https://davidfola.vercel.app/opengraph-image.png'], // Must be an absolute URL
+    creatorId: '1199097267287928838',
+    images: ['https://davidfola.vercel.app/opengraph-image.jpg'], // Must be an absolute URL
   },
 };
 
