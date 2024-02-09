@@ -94,7 +94,7 @@ export const experience: ExperienceItem[] = [
       'Worked closely with the interdisciplinary team to identify and rank features and requirements. ',
       'Created and executed unit tests and carried out system testing to maintain the entire infrastructure quality.',
     ],
-    duration: 'Aug 2023 - Oct 2023 * Remote',
+    duration: 'July 2023 - Nov 2023 * Remote',
     link: 'https://lubesurgeons.com',
   },
   {
@@ -116,7 +116,7 @@ export const experience: ExperienceItem[] = [
       'Developed the entire Frontend from scratch for Cloudnetvox, identified and resolved software defects and issues, ensuring a seamless user experience.',
       'Played a pivotal role in advancing software development processes and best practices for continuous improvement.',
     ],
-    duration: 'Aug 2023 - Oct 2023 * On-site',
+    duration: 'June 2021 - Oct 2022 * On-site',
     link: 'https://cloudnetvox.com',
   },
 ];

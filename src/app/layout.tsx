@@ -76,6 +76,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  console.clear();
+  const linkURL = 'https://x.com/zyzer01';
+  console.log(
+    '%c🚀 Built by %cDavid Onifade 🚀 - ' + linkURL,
+    'color: red; font-size: 25px;',
+    'font-weight: bold; font-size: 25px;'
+  );
   return (
     <html lang="en">
       <body className={`${manrope.variable} ${proggy.variable}`}>
