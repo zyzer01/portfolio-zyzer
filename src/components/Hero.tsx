@@ -37,7 +37,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="flex flex-col space-y-6 pt-32">
+    <div className="flex flex-col space-y-6 pt-28 md:pt-32">
       <div className="transition-all ease-out duration-300">
         <div className="proggy text-xl">
           <Typewriter
