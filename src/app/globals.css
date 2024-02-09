@@ -21,13 +21,6 @@ h6 {
   color: #8D8D8D;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 html {
   scroll-behavior: smooth;
@@ -36,13 +29,8 @@ html {
 body {
   overflow-x: hidden;
   font-family: var(--font-manrope);
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #fff;
+  background-color: #000;
 }
 
 .proggy {
