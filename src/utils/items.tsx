@@ -91,8 +91,9 @@ export const experience: ExperienceItem[] = [
     company: 'Lubesurgeons',
     jobDescription: 'Frontend Engineer',
     achievements: [
-      'Worked closely with the interdisciplinary team to identify and rank features and requirements. ',
-      'Created and executed unit tests and carried out system testing to maintain the entire infrastructure quality.',
+      'Spearheaded the development of a comprehensive software solution for Lubesurgens, a pioneering startup specializing in vehicle maintenance booking services',
+      'Collaborated with cross-functional team of designers and developers to bring the the project to fruition',
+      'Took a leading role in building and refining the core components of the software, contributing to its succeful launch and ongoing improvement.',
     ],
     duration: 'July 2023 - Nov 2023 * Remote',
     link: 'https://lubesurgeons.com',
@@ -103,7 +104,7 @@ export const experience: ExperienceItem[] = [
     jobDescription: 'Frontend Engineer',
     achievements: [
       'Worked closely with the interdisciplinary team to identify and rank features and requirements. ',
-      'Created and executed unit tests and carried out system testing to maintain the entire infrastructure quality.',
+      'Conducted code reviews and offered suggestions for enhancing code quality',
     ],
     duration: 'Nov 2022 - May 2023 * Hybrid',
     link: 'https://netvox.ng',
@@ -114,6 +115,7 @@ export const experience: ExperienceItem[] = [
     jobDescription: 'Web Developer',
     achievements: [
       'Developed the entire Frontend from scratch for Cloudnetvox, identified and resolved software defects and issues, ensuring a seamless user experience.',
+      'Identified and resolved software defects and issues, ensuring seamless user experience',
       'Played a pivotal role in advancing software development processes and best practices for continuous improvement.',
     ],
     duration: 'June 2021 - Oct 2022 * On-site',

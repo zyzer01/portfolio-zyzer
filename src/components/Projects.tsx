@@ -34,14 +34,14 @@ const Projects = () => {
             </p>
             <div className="flex text-xl space-x-2 text-shade pt-6">
               {item.isOnGithub && (
-                <Link href={item.repository}>
+                <Link href={item.repository} target="_blank">
                   <p className="hover:scale-125 transition ease-in-out duration-300">
                     <FiGithub />
                   </p>
                 </Link>
               )}
               {item.isLive && (
-                <Link href={item.liveLink}>
+                <Link href={item.liveLink} target="_blank">
                   <p className="hover:scale-125 transition ease-in-out duration-300">
                     <MdOutlineArrowOutward />
                   </p>
