@@ -147,7 +147,7 @@ export const projects = [
     description:
       'Cloudnetvox is a leading domains and web hosting provider offering comprehensive suites of services tailored to meet the diverse needs of businesses and individuals alike with robust hosting solutions ',
     repository: 'https://github.com/zyzer01/cloudnetvox-new',
-    liveLink: 'https://lubesurgeons.com',
+    liveLink: 'https://cloudnetvox.vercel.app',
     isLive: true,
     isOnGithub: true,
     technologies: 'Next.js • Typescript • TailwindCSS • Framer motion • Express.js ',
