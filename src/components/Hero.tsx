@@ -1,9 +1,41 @@
+import React from 'react';
 import Button from './ui/Button';
 import { technologies } from '@/utils/items';
 import Marquee from 'react-fast-marquee';
 import Typewriter from 'typewriter-effect';
 
 const Hero = () => {
+  const getGreeting = () => {
+    const currentTime = new Date().getHours();
+    let greeting: { english: string; spanish: string; french: string } = {
+      english: '',
+      spanish: '',
+      french: '',
+    };
+
+    if (currentTime >= 0 && currentTime < 12) {
+      greeting = {
+        english: 'Good morning',
+        spanish: 'Buenos días',
+        french: 'Bonjour',
+      };
+    } else if (currentTime >= 12 && currentTime < 18) {
+      greeting = {
+        english: 'Good afternoon',
+        spanish: 'Buenas tardes',
+        french: 'Bon après-midi',
+      };
+    } else {
+      greeting = {
+        english: 'Good evening',
+        spanish: 'Buenas noches',
+        french: 'Bonsoir',
+      };
+    }
+
+    return greeting;
+  };
+
   return (
     <div className="flex flex-col space-y-6 pt-32">
       <div className="transition-all ease-out duration-300">
@@ -14,12 +46,14 @@ const Hero = () => {
             }}
             onInit={(typewriter) => {
               typewriter
-                .typeString('Hello, my name is')
+                .typeString(`${getGreeting().english}, my name is`) //English Greeting
                 .pauseFor(1000)
                 .deleteAll()
-                .typeString('Hola, mi nombre es')
+                .typeString(`${getGreeting().spanish}, mi nombre es`) //Spanish Greeting
+                .pauseFor(1000)
                 .deleteAll()
-                .typeString("Bonjour, je m'appelle")
+                .typeString(`${getGreeting().french}, je m'appelle`) //French Greeting
+                .pauseFor(1000)
                 .deleteAll()
                 .start();
             }}

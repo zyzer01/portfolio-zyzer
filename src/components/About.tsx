@@ -11,14 +11,13 @@ const About = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
         <div className="text-shade ">
           <p className="leading-relaxed">
-            Hi, there! My name is David, I'm an experienced software developer with 3+ years'
-            expertise in standard application development, currently building an enterprise
-            application (news soon), I'm proficient in a number of programming languages and tech
-            tools.
+            Hi, there! My name is David, I'm an experienced software developer with 3+ years in
+            standard application development, currently building an enterprise application (news
+            soon), I'm proficient in a number of programming languages and tech tools.
           </p>
           <br />
           <p>
-            I'm a strong problem solver, collaborative team player, Over my few years in tech, I
+            I'm a strong problem solver and collaborative team player, Over my few years in tech, I
             have contributed to some amazing open-source projects like{' '}
             <span className="transition-all ease duration-300 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
               <Link href="https://github.com/build-trust" target="_blank">
@@ -32,7 +31,9 @@ const About = () => {
               </Link>
             </span>{' '}
             actively engaging with the developer community to foster innovation and drive industry
-            advancement. I'm Passionate about leveraging technology to create impactful solutions.
+            advancement. I've also ran a web design agency, where I and my partner, Kolawole built
+            and delivered over 20 web apps to our clients all over the world. I'm Passionate about
+            leveraging technology to create impactful solutions.
           </p>
           <br />
           <p>
@@ -43,7 +44,7 @@ const About = () => {
         <div className="group">
           <Image
             src={zyzer}
-            width={370}
+            width={380}
             height={200}
             alt="David Onifade smiling with his teeth out"
             className="grayscale group-hover:filter-none border border-shade rounded p-4 group-hover:transform group-hover:scale-105 transition-all ease cursor-pointer"
