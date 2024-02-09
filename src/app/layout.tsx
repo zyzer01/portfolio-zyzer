@@ -5,6 +5,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import Link from 'next/link';
 import LoadingScreen from '@/components/LoadingScreen';
+import Script from 'next/script';
 
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope' });
 
@@ -78,6 +79,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QVBV7WWLFW"></Script>
+        <Script id="google-analytics">
+          {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-QVBV7WWLFW');`}
+        </Script>
+      </head>
       <body className={`${manrope.variable} ${proggy.variable}`}>
         <LoadingScreen>
           <div>
