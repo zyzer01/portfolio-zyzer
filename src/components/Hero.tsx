@@ -71,7 +71,10 @@ const Hero = () => {
         occasional work on the backend. I take pride in delivering applications that are not only
         efficient but also prioritize performance, accessibility, and responsiveness.
       </h6>
-      <Button text="Resume" href="resume.pdf" />
+      <Button
+        text="Resume"
+        href="https://drive.google.com/file/d/11it0pxAYbKc_uLoiHh0HpX6C7jQ1bFuE/view?usp=drive_link"
+      />
       <div className="proggy pt-8">
         <Marquee>
           {technologies.map((item, index) => (
