@@ -105,7 +105,6 @@ export default function RootLayout({
               </p>
             </div>
           </div>
-        </LoadingScreen>
       </body>
     </html>
   );
