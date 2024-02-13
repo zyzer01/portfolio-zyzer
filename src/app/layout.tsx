@@ -90,7 +90,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${manrope.variable} ${proggy.variable}`}>
-        <LoadingScreen>
+        
           <div>
             {children}
             <div className="flex proggy justify-center">
