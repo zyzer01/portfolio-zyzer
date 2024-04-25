@@ -183,12 +183,12 @@ export const otherProjects = [
   },
   {
     id: 2,
-    name: 'Better Lettings',
+    name: 'Census Survey',
     description:
-      'UK Shortlet agency service with constant listings updates to bring you the most extensive choice when it comes to London property.',
-    technologies: 'Wordpress • Elementor',
-    repository: '',
-    liveLink: 'https://better.afiaoha.com',
+      '"A web application for conducting census surveys, allowing users to add and admins to manage household members with various personal details on the dashboard".',
+    technologies: 'Next.js • Typescript • Prisma • PostgreSQL',
+    repository: 'https://github.com/zyzer01/census-survey',
+    liveLink: 'https://census-survey.vercel.app',
     isLive: true,
     isOnGithub: false,
   },
