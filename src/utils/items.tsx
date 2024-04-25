@@ -185,7 +185,7 @@ export const otherProjects = [
     id: 2,
     name: 'Census Survey',
     description:
-      '"A web application for conducting census surveys, allowing users to add and admins to manage household members with various personal details on the dashboard".',
+      "A web app for conducting census surveys, allowing users to fill in their details, and admin dashboard to manage respondent info.",
     technologies: 'Next.js • Typescript • Prisma • PostgreSQL',
     repository: 'https://github.com/zyzer01/census-survey',
     liveLink: 'https://census-survey.vercel.app',
