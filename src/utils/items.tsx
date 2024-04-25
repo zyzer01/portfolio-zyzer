@@ -190,7 +190,7 @@ export const otherProjects = [
     repository: 'https://github.com/zyzer01/census-survey',
     liveLink: 'https://census-survey.vercel.app',
     isLive: true,
-    isOnGithub: false,
+    isOnGithub: true,
   },
   {
     id: 3,
