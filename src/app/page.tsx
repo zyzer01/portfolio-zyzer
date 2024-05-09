@@ -22,14 +22,14 @@ const Home = () => {
   );
   return (
     <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 0.75, ease: "easeIn" }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.75, ease: "easeIn" }}
     >
-      <div className="flex justify-end mr-44">
-        <div className="relative before:absolute md:before:h-[300px] md:before:w-[350px] before:h-[250px] before:w-[300px] before:right-0 after:right-0 md:before:-right-56 md:after:-right-56 before:rounded-full before:bg-gradient-radial before:from-secondary/50 before:to-primary/50 before:blur-2xl before:content-[''] after:absolute after:-z-20 md:after:h-[300px] md:after:w-[300px] after:h-[200px] after:w-[200px] after:bg-gradient-conic after:from-secondary/50 after:via-fuchsia-700/50 after:blur-2xl after:content-[''] z-[-1] animate-bg-gradient"></div>
-      </div>
-      <NavBar />
+        <div className="flex justify-end mr-44 pointer-events-none">
+          <div className="relative before:absolute md:before:h-[300px] md:before:w-[350px] before:h-[250px] before:w-[300px] before:right-0 after:right-0 md:before:-right-56 md:after:-right-56 before:rounded-full before:bg-gradient-radial before:from-secondary/50 before:to-primary/50 before:blur-2xl before:content-[''] after:absolute after:-z-0 md:after:h-[300px] md:after:w-[300px] after:h-[200px] after:w-[200px] after:bg-gradient-conic after:from-secondary/50 after:via-fuchsia-700/50 after:blur-2xl after:content-[''] z-[-1] animate-bg-gradient pointer-event-none"></div>
+        </div>
+        <NavBar />
       <div className="grid grid-cols-6 place-content-between px-8 md:px-0">
         <div className="justify-self-center">
           <div className="hidden md:flex flex-col space-y-8 justify-center items-center fixed top-0 bottom-0">
@@ -43,7 +43,7 @@ const Home = () => {
           </div>
         </div>
         <div className="col-span-6 md:col-span-4">
-                <CursorBlur />
+          <CursorBlur />
           <Hero />
           <Spacer />
           <About />
