@@ -1,31 +1,33 @@
-'use client';
-import { socials } from '@/utils/items';
-import Link from 'next/link';
-import Hero from '@/components/Hero';
-import About from '@/components/About';
-import Spacer from '@/components/Spacer';
-import Experience from '@/components/Experience';
-import Projects from '@/components/Projects';
-import OtherProjects from '@/components/OtherProjects';
-import Footer from '@/components/Footer';
-import NavBar from '@/components/NavBar';
-import { cubicBezier, motion } from 'framer-motion';
+"use client";
+import { socials } from "@/utils/items";
+import Link from "next/link";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Spacer from "@/components/Spacer";
+import Experience from "@/components/Experience";
+import Projects from "@/components/Projects";
+import OtherProjects from "@/components/OtherProjects";
+import Footer from "@/components/Footer";
+import NavBar from "@/components/NavBar";
+import { motion } from "framer-motion";
+import CursorBlur from "@/components/CursorBlur";
 
 const Home = () => {
   console.clear();
-  const linkURL = 'https://x.com/zyzer01';
+  const linkURL = "https://x.com/zyzer01";
   console.log(
-    '%c🚀 Built by %cDavid Onifade 🚀 - ' + linkURL,
-    'color: red; font-size: 25px;',
-    'font-weight: bold; font-size: 25px;'
+    "%c🚀 Built by %cDavid Onifade 🚀 - " + linkURL,
+    "color: red; font-size: 25px;",
+    "font-weight: bold; font-size: 25px;"
   );
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.75, ease: 'easeIn' }}>
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.75, ease: "easeIn" }}
+    >
       <div className="flex justify-end mr-44">
-        <div className="relative before:absolute md:before:h-[270px] md:before:w-[300px] before:h-[200px] before:w-[250px]  before:right-0 after:right-0 md:before:-right-48 md:after:-right-48 before:rounded-full before:bg-gradient-radial before:from-secondary before:to-pink-900 before:blur-2xl before:content-[''] after:absolute after:-z-20 md:after:h-[270px] md:after:w-[250px] after:h-[150px] after:w-[150px] after:bg-gradient-conic after:from-secondary after:via-fuchsia-700 after:blur-2xl after:content-[''] z-[-1] animate-bg-gradient"></div>
+        <div className="relative before:absolute md:before:h-[300px] md:before:w-[350px] before:h-[250px] before:w-[300px] before:right-0 after:right-0 md:before:-right-56 md:after:-right-56 before:rounded-full before:bg-gradient-radial before:from-secondary/50 before:to-primary/50 before:blur-2xl before:content-[''] after:absolute after:-z-20 md:after:h-[300px] md:after:w-[300px] after:h-[200px] after:w-[200px] after:bg-gradient-conic after:from-secondary/50 after:via-fuchsia-700/50 after:blur-2xl after:content-[''] z-[-1] animate-bg-gradient"></div>
       </div>
       <NavBar />
       <div className="grid grid-cols-6 place-content-between px-8 md:px-0">
@@ -41,6 +43,7 @@ const Home = () => {
           </div>
         </div>
         <div className="col-span-6 md:col-span-4">
+                <CursorBlur />
           <Hero />
           <Spacer />
           <About />
