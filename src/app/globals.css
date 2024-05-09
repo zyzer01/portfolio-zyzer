@@ -7,6 +7,7 @@
 :root {
   --color-primary: '#ED1E79';
   --color-secondary: '#662D8C';
+  --main-theme-1: #f8f8f8;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -15,7 +16,27 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  .card-wrapper {
+    @apply relative overflow-hidden rounded-2xl bg-gradient-to-b from-slate-700 to-slate-800;
+  }
+
+  .card-wrapper::before {
+    background: conic-gradient(
+      rgb(102, 45, 140) 0deg,
+      rgb(189, 12, 89) 30deg,
+      transparent 70deg
+    );
+
+    @apply absolute h-[200%] w-[200%] top-[-45%] left-[-45%] animate-border-spin content-[''];
+  }
+
+  .card-content {
+   @apply relative w-[calc(100%-2px)] h-[calc(100%-2px)] top-[1px] left-[1px] bg-black rounded-2xl
+  }
 }
+
+
 
 h6 {
   color: #8D8D8D;
@@ -39,6 +60,14 @@ body {
 
 .header-gradient {
   position: relative;
+}
+
+.glow {
+  background: radial-gradient(var(--main-theme-1), transparent);
+  top: calc(var(--mouse-y) - 200px);
+  left: calc(var(--mouse-x) - 200px);
+  opacity: 0.1;
+  filter: blur(20px);
 }
 
 /* .smooth-scroll-parent {
@@ -106,6 +135,4 @@ body {
     background-position: 0% 50%;
   }
 }
-
-
 
