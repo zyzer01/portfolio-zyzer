@@ -6,19 +6,19 @@ const NavBar = () => {
     <nav className="py-8 px-6 md:px-20 z-50">
       <div className="proggy text-lg ">
         <ul className="flex justify-between">
-          <li>
+          <li className='menu-link'>
             <Link href="#about">About</Link>
           </li>
-          <li>
+          <li className='menu-link'>
             <Link href="#experience">Experience</Link>
           </li>
           {/* <li>
             <Link href="/">Logo</Link>
           </li> */}
-          <li>
+          <li className='menu-link'>
             <Link href="#projects">Projects</Link>
           </li>
-          <li>
+          <li className='menu-link'>
             <Link href="#contact">Contact</Link>
           </li>
         </ul>
