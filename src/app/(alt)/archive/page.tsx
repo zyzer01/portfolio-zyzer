@@ -88,14 +88,14 @@ const page = () => {
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-gray-300 flex space-x-2">
                             {item.isOnGithub && (
-                              <Link href={item.repository} target="_blank">
+                              <Link href={item.repository ? item.repository : '#'} target="_blank">
                                 <p className="hover:scale-125 transition ease-in-out duration-300">
                                   <FiGithub />
                                 </p>
                               </Link>
                             )}
                             {item.isLive && (
-                              <Link href={item.liveLink} target="_blank">
+                              <Link href={item.liveLink ? item.liveLink : '#'} target="_blank">
                                 <p className="hover:scale-125 transition ease-in-out duration-300">
                                   <MdOutlineArrowOutward />
                                 </p>
