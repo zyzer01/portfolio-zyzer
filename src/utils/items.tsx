@@ -140,7 +140,7 @@ export const projects = [
     description:
       "Lubesurgeons is a platform that provides convenience with its on-demand automobile repair service. You can get swift and expert car care services delivered to your location. Enjoy transparent pricing, skilled technicians, and a seamless user experience, all at your fingertips.",
     repository: "https://github.com/zyzer01/lubesurgeons",
-    liveLink: "www.lubesurgeons.com",
+    liveLink: "https://www.lubesurgeons.com",
     isLive: true,
     isOnGithub: true,
     technologies:
