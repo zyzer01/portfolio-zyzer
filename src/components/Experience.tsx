@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { experience } from '@/utils/items';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
-import SectionHeading from './ui/SectionHeading';
-import Link from 'next/link';
+import { experience } from "@/utils/items";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import SectionHeading from "./ui/SectionHeading";
+import Link from "next/link";
 
 const Experience = () => {
-  const [activeTab, setActiveTab] = useState('Lubesurgeons');
+  const [activeTab, setActiveTab] = useState("Lubesurgeons");
 
   const handleTabClick = (tab: any) => {
     setActiveTab(tab);
@@ -27,8 +27,9 @@ const Experience = () => {
                   key={tab.id}
                   onClick={() => handleTabClick(tab.company)}
                   className={`cursor-pointer pl-2 hover:bg-opacity-25 hover:bg-shade py-2 ${
-                    activeTab === tab.company && 'border-l text-bright'
-                  }`}>
+                    activeTab === tab.company && "border-l text-bright"
+                  }`}
+                >
                   {tab.company}
                 </li>
               ))}
@@ -45,10 +46,11 @@ const Experience = () => {
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: 100 }}
-                  transition={{ duration: 0.5 }}>
+                  transition={{ duration: 0.5 }}
+                >
                   <div>
                     <h2 className="text-bright text-xl md:text-2xl font-medium">
-                      {activeItem.jobDescription}{' '}
+                      {activeItem.jobDescription}{" "}
                       <span className="transition-all ease duration-300 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary lowercase">
                         <Link href={activeItem.link} target="_blank">
                           @{activeItem.company}
@@ -72,7 +74,7 @@ const Experience = () => {
         </div>
       </div>
       <div className="flex justify-start -ml-48 md:-ml-72">
-        <div className="relative before:absolute before:h-[350px] before:w-[520px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:to-primary before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[200px] after:w-[260px] after:translate-x-1/3 after:bg-gradient-conic after:from-secondary after:via-fuchsia-700 after:blur-2xl after:content-[''] before:h-[360px] z-[-1] animate-bg-gradient"></div>
+        <div className="relative before:absolute before:w-[520px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-secondary before:to-primary before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[200px] after:w-[260px] after:translate-x-1/3 after:bg-gradient-conic after:from-secondary after:via-fuchsia-700 after:blur-2xl after:content-[''] before:h-[360px] z-[-1] animate-bg-gradient"></div>
       </div>
     </div>
   );
