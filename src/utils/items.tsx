@@ -248,7 +248,7 @@ export const archive: Archive[] = [
   {
     id: 1,
     title: "Netvox",
-    year: 2022,
+    year: 2023,
     technologies: "Wordpress • Elementor • Essential Addon",
     liveLink: "https://netvox.ng",
     isLive: true,
@@ -257,7 +257,7 @@ export const archive: Archive[] = [
   {
     id: 2,
     title: "Palmone Consulting",
-    year: 2022,
+    year: 2024,
     technologies: "Wordpress • Elementor",
     liveLink: "https://palmone.com.ng",
     isLive: true,
