@@ -97,7 +97,7 @@ export default function RootLayout({
           {children}
           <div className="flex proggy justify-center">
             <p className="text-shade">
-              Built by yours truly, Designed by{" "}
+              Built by David, Designed by{" "}
               <span className="text-gray-300">
                 {" "}
                 <Link
