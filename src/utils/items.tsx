@@ -234,11 +234,11 @@ export const otherProjects: OtherProjects[] = [
   },
   {
     id: 6,
-    name: "HAA Group",
+    name: "234Residence",
     description:
-      "Like AirBnB, HAA provides a unique collection of magnificent properties to rent for short stays to guests traveling to and within the UK.",
+      "A siple and clean property showcase and enquiries page for a real estate company .",
     technologies: "Wordpress • Elementor",
-    liveLink: "https://ext.afiaoha.com",
+    liveLink: "https://234residence.com",
     isLive: true,
     isOnGithub: false,
   },
