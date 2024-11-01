@@ -34,7 +34,7 @@ const About = () => {
             actively engaging with the developer community to foster innovation
             and drive industry advancement. I've also ran a web design agency,
             where I and my partner, Kolawole built and delivered over 20 web
-            apps to our clients all over the world. I'm Passionate about
+            apps to both international and local clients. I'm Passionate about
             leveraging technology to create impactful solutions.
           </p>
           <br />
