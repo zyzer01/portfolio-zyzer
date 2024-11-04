@@ -29,3 +29,19 @@ export type Archive = {
   isLive: boolean,
   isOnGithub: boolean,
 }
+
+
+export interface ProjectProps {
+  id: number,
+  name: string,
+  color: string,
+  phoneBgColor: string,
+  projectLogo: string,
+  description: string,
+  repository: string,
+  liveLink: string,
+  isLive: boolean,
+  isOnGithub: boolean,
+  technologies: string,
+  isReversed?: boolean,
+}

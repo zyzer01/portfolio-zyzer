@@ -36,7 +36,7 @@ const config: Config = {
         shade: '#8D8D8D',
         cloudnetvox: '#06155A',
         lubesurgeons: '#FF9F15',
-        cohost: '#A478FB',
+        ruachost: '#14E6C5',
       },
     },
   },

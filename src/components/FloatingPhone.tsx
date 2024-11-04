@@ -11,8 +11,8 @@ const FloatingPhone: React.FC<PhoneProps> = ({ imageSrc, bgColor, hasTopBanner }
         return 'bg-lubesurgeons';
       case 'blue':
         return 'bg-cloudnetvox';
-      case 'purple':
-        return 'bg-cohost';
+      case 'turquoise':
+        return 'bg-ruachost';
       default:
         return '';
     }

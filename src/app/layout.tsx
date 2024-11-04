@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import type { Viewport } from "next";
-import { Manrope } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
 import LoadingScreen from "@/components/LoadingScreen";
 import Script from "next/script";
 
-const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
+const sg = Space_Grotesk({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const proggy = localFont({
   src: "./fonts/proggycleantt.ttf",
@@ -92,7 +95,7 @@ export default function RootLayout({
             gtag('config', 'G-QVBV7WWLFW');`}
         </Script>
       </head>
-      <body className={`${manrope.variable} ${proggy.variable}`}>
+      <body className={`${sg.className} ${proggy.variable} antialiased`}>
         <div>
           {children}
           <div className="flex proggy justify-center">

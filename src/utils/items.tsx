@@ -13,7 +13,7 @@ import {
 import { CgFramer } from "react-icons/cg";
 import { RiSupabaseFill } from "react-icons/ri";
 import { DiMongodb } from "react-icons/di";
-import { Archive, ExperienceItem, OtherProjects } from "./types";
+import { Archive, ExperienceItem, OtherProjects, ProjectProps } from "./types";
 
 export const socials = [
   {
@@ -130,7 +130,7 @@ export const experience: ExperienceItem[] = [
   },
 ];
 
-export const projects = [
+export const projects: ProjectProps[] = [
   {
     id: 1,
     name: "Lubesurgeons",
@@ -164,17 +164,17 @@ export const projects = [
   },
   {
     id: 3,
-    name: "Cohosts",
-    color: "purple",
-    phoneBgColor: "purple",
-    projectLogo: "/images/Cohosts-1-1.png",
+    name: "Ruachost",
+    color: "turquoise",
+    phoneBgColor: "turquoise",
+    projectLogo: "/images/ruachost logo black turquoise icon.png",
     description:
-      "Cohost is a UK Real Estate agency that offer higher rental income as well as flexible letting (short, medium, and long let). CoHosts handles everything from booking to check-out, housekeeping and maintenance.",
-    repository: "https://github.com/zyzer01/cloudnetvox-new",
-    liveLink: "https://sample.afiaoha.com",
+      "Ruachost is focused on environmentally conscious web hosting and domain name services. They provide sustainable hosting solutions",
+    repository: "",
+    liveLink: "https://ruachost.com",
     isLive: true,
     isOnGithub: false,
-    technologies: "Wordpress • Elementor • Slider Revolution",
+    technologies: "Next.js • Typescript • TailwindCSS • Framer motion",
   },
 ];
 
