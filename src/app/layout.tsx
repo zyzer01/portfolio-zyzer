@@ -34,10 +34,10 @@ export const metadata: Metadata = {
   applicationName: "David Onifade | Portfolio",
   referrer: "origin-when-cross-origin",
   keywords: ["Porfolio", "React", "Nextjs"],
-  authors: [{ name: "David", url: "https://davidfola.vercel.app" }],
+  authors: [{ name: "David", url: "https://www.davidfola.me" }],
   creator: "David Onifade",
   publisher: "David (Zyzer)",
-  metadataBase: new URL("https://davidfola.vercel.app"),
+  metadataBase: new URL("https://www.davidfola.me"),
   alternates: {
     canonical: "/",
     languages: {
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "David Onifade | Software Developer",
     description:
       "Experienced software developer with 3+ years of expertise in standard web application development. Adept problem solver, dedicated to open-source contributions.",
-    url: "https://davidfola.vercel.app",
+    url: "https://www.davidfola.me",
     siteName: "David Onifade",
     images: "https://davidfola.vercel.app/opengraph-image.jpeg",
     locale: "en_US",

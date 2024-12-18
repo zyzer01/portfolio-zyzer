@@ -1,9 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import {
-  fetchAllPosts,
-  fetchPublications,
-} from "@/lib/hashnode-action";
+import { fetchAllPosts, fetchPublications } from "@/lib/hashnode-action";
 import { Suspense } from "react";
 import { PostsLoading } from "@/components/posts-loading";
 import AuthorProfiles, { AuthorNames } from "@/components/blog/author-profiles";
@@ -12,15 +9,16 @@ import SeriesTab from "@/components/blog/series-tab";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Blog | David Onifade",
+  title: "Blog | David Onifade",
+  description:
+    "I write about Software Engineering, Frontend Development, Backend Development, and DevOps.",
+  openGraph: {
+    title: "🚀 Software Engineering Insights | David Onifade",
     description:
       "I write about Software Engineering, Frontend Development, Backend Development, and DevOps.",
-    openGraph: {
-      title: "🚀 David Onifade | Software Engineering Insights",
-      description:
-        "I write about Software Engineering, Frontend Development, Backend Development, and DevOps.",
-    },
-  };  
+    url: "https://www.davidfola.me/blog",
+  },
+};
 
 export default async function BlogHome() {
   const publicationData = await fetchPublications("zyzer01.hashnode.dev");
@@ -40,7 +38,9 @@ export default async function BlogHome() {
               Blog
             </span>
           </h1>
-          <p className="proggy text-xl">Frontend  •  Backend   •  Software-Engineering  •  Devops</p>
+          <p className="proggy text-xl">
+            Frontend • Backend • Software-Engineering • Devops
+          </p>
         </div>
         <div className="place-self-end">
           <Link href="/">
