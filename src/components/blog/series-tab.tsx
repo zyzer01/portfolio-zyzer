@@ -5,7 +5,7 @@ import { AuthorNames } from "./author-profiles";
 import Link from "next/link";
 
 const HASHNODE_PUBLICATION_ID =
-    process.env.NEXT_HASHNODE_PUBLICATION_ID || "616b433db636526db5f485f8";
+    process.env.NEXT_HASHNODE_PUBLICATION_ID || "";
 
 const SeriesTab = async () => {
   const postInSeriesData = await fetchPostsInSeries(HASHNODE_PUBLICATION_ID, "swe");

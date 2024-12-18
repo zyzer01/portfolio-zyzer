@@ -13,7 +13,7 @@ export const AuthorNames: React.FC<AuthorProfilesProps> = ({
   const allAuthors = [author, ...(coAuthors || [])].filter(Boolean);
   const authorNames = allAuthors.map((person) => person.name).join(", ");
 
-  return <span className="text-sm font-bold text-gray-400">{authorNames}</span>;
+  return <span className="text-sm font-bold text-gray-300">{authorNames}</span>;
 };
 
 const AuthorProfiles: React.FC<AuthorProfilesProps> = ({

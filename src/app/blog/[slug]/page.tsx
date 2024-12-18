@@ -12,9 +12,9 @@ import AuthorProfiles, { AuthorNames } from "@/components/blog/author-profiles";
 import ScrollToTopButton from "@/components/scroll-to-top-button";
 
 const HASHNODE_PUBLICATION_ID =
-  process.env.NEXT_HASHNODE_PUBLICATION_ID || "616b433db636526db5f485f8";
+  process.env.NEXT_HASHNODE_PUBLICATION_ID || "";
 const HASHNODE_HOST =
-  process.env.NEXT_HASHNODE_PUBLICATION_HOST || "zyzer01.hashnode.dev";
+  process.env.NEXT_HASHNODE_PUBLICATION_HOST || "";
 
 export async function generateMetadata({
   params,
