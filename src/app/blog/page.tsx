@@ -55,7 +55,7 @@ export default async function BlogHome() {
       </div>
       <Suspense fallback={<PostsLoading />}>
         <div className="grid md:grid-cols-5 gap-6 lg:gap-10">
-          <div className="col-span-3">
+          <div className="col-span-5 md:col-span-3">
             <div className="grid gap-y-8">
               {posts.map(({ node: post }) => (
                 <Link

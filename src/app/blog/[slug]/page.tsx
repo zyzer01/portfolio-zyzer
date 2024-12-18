@@ -26,7 +26,6 @@ export async function generateMetadata({
 
   return generatePostMetadata({
     post,
-    hostname: HASHNODE_HOST,
   });
 }
 
@@ -38,7 +37,7 @@ export default async function BlogPost({
   const postData = await fetchPost(HASHNODE_PUBLICATION_ID, params.slug);
   const post = postData.publication.post;
 
-  const jsonLd = generateJsonLd(post, HASHNODE_HOST);
+  const jsonLd = generateJsonLd(post);
 
   const currentPostId = post.id;
 

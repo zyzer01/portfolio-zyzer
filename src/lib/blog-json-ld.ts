@@ -1,6 +1,6 @@
 import { PostNode } from "./types/hashnode";
 
-export function generateJsonLd(post: PostNode, hostname: string) {
+export function generateJsonLd(post: PostNode) {
     return {
         '@context': 'https://schema.org',
         '@type': 'BlogPosting',
@@ -16,11 +16,11 @@ export function generateJsonLd(post: PostNode, hostname: string) {
         'image': post.coverImage?.url,
         'mainEntityOfPage': {
             '@type': 'WebPage',
-            '@id': `https://${hostname}/blog/${post.slug}`
+            '@id': `https://www.davidfola.me/blog/${post.slug}`
         },
         'publisher': {
             '@type': 'Organization',
-            'name': hostname,
+            'name': 'davidfola.me',
             'logo': {
                 '@type': 'ImageObject',
                 'url': post.author.profilePicture

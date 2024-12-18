@@ -3,10 +3,9 @@ import { PostNode } from "@/lib/types/hashnode";
 
 type SEOProps = {
   post: PostNode;
-  hostname: string;
 };
 
-export function generatePostMetadata({ post, hostname }: SEOProps): Metadata {
+export function generatePostMetadata({ post }: SEOProps): Metadata {
   const title = post.title;
   const description = post.subtitle || post.brief;
   const ogTitle = post.seo.title;
@@ -33,7 +32,7 @@ export function generatePostMetadata({ post, hostname }: SEOProps): Metadata {
         height: 630,
         alt: title
       }] : [],
-      url: `https://${hostname}/blog/${post.slug}`
+      url: `https://www.davidfola.me/blog/${post.slug}`
     },
     twitter: {
       card: 'summary_large_image',
@@ -43,7 +42,7 @@ export function generatePostMetadata({ post, hostname }: SEOProps): Metadata {
       creator: `@zyzer01`
     },
     alternates: {
-      canonical: `https://${hostname}/blog/${post.slug}`
+      canonical: `https://www.davidfola.me/blog/${post.slug}`
     },
     other: {
       'article:published_time': publishedTime,
