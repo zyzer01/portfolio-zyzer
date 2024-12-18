@@ -10,6 +10,7 @@ export function generatePostMetadata({ post }: SEOProps): Metadata {
   const description = post.subtitle || post.brief;
   const ogTitle = post.seo.title;
   const ogDescription = post.seo.description;
+  const slug = post.slug;
   const ogImage = post.ogMetaData.image || post.coverImage.url;
   const publishedTime = new Date(post.publishedAt).toISOString();
   const modifiedTime = new Date(post.updatedAt).toISOString();
@@ -32,7 +33,7 @@ export function generatePostMetadata({ post }: SEOProps): Metadata {
         height: 630,
         alt: title
       }] : [],
-      url: `https://www.davidfola.me/blog/${post.slug}`
+      url: `https://www.davidfola.me/blog/${slug}`
     },
     twitter: {
       card: 'summary_large_image',
@@ -42,7 +43,7 @@ export function generatePostMetadata({ post }: SEOProps): Metadata {
       creator: `@zyzer01`
     },
     alternates: {
-      canonical: `https://www.davidfola.me/blog/${post.slug}`
+      canonical: `https://www.davidfola.me/blog/${slug}`
     },
     other: {
       'article:published_time': publishedTime,
