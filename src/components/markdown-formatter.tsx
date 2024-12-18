@@ -13,6 +13,7 @@ const MarkdownFormatter: React.FC<MarkdownFormatterProps> = ({ markdown }) => {
     <article className="prose lg:prose-xl w-full max-w-7xl text-slate-400 text-lg md:text-xl leading-loose">
       <Markdown
         components={{
+          // @ts-ignore
           code: CodeBlock,
           h1: ({node, ...props}) => <h1 className="text-3xl font-bold mb-4" {...props} />,
           h2: ({node, ...props}) => <h2 className="text-2xl font-semibold mb-3" {...props} />,
