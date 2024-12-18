@@ -57,7 +57,7 @@ export default async function BlogPost({
   console.log(post);
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -109,6 +109,6 @@ export default async function BlogPost({
         )}
       </div>
       <ScrollToTopButton />
-    </>
+    </div>
   );
 }
