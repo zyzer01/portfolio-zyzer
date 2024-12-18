@@ -303,3 +303,24 @@ export const archive: Archive[] = [
     isOnGithub: true,
   },
 ];
+
+
+export const myPosts = [
+  {
+    id: "1",
+    title: "This is a blog post",
+    brief: "Lorem ipsum donor wsm xlsai ewytiwpe ippso  ospeo sysidpep oapsu  eyy eyuaitsd aiuxcsjnca scuiayepo qoiquwd soia",
+    coverImage: {
+      url: "/images/github to vps 1600 x 840.png"
+    },
+    slug: "this-is-a-blog-post",
+    publishedAt: "2024-12-16T11:58:22.363Z",
+    author: {
+      name: "David Onifade",
+      profilePicture: "/images/david onifade profile picture.png"
+    },
+    content: {
+      html: "<h1>Hello world</h1><br/> <p>This is my new blog pys Lorem ipsum donor wsm xlsai ewytiwpe ippso  ospeo sysidpep oapsu  eyy eyuaitsd aiuxcsjnca scuiayepo qoiquwd soi Lorem ipsum donor wsm xlsai ewytiwpe ippso  ospeo sysidpep oapsu  eyy eyuaitsd aiuxcsjnca scuiayepo qoiquwd soi Lorem ipsum donor wsm xlsai ewytiwpe ippso  ospeo sysidpep oapsu  eyy eyuaitsd aiuxcsjnca scuiayepo qoiquwd soi</p>"
+    }
+  }
+]

@@ -6,6 +6,7 @@ import "./globals.css";
 import Link from "next/link";
 import LoadingScreen from "@/components/LoadingScreen";
 import Script from "next/script";
+import ProgressBarProviders from "@/components/progress-bar-provider";
 
 const sg = Space_Grotesk({
   subsets: ["latin"],
@@ -96,23 +97,25 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${sg.className} ${proggy.variable} antialiased`}>
-        <div>
-          {children}
-          <div className="flex proggy justify-center">
-            <p className="text-shade">
-              Built by David, Designed by{" "}
-              <span className="text-gray-300">
-                {" "}
-                <Link
-                  href="https://behance.net/olubummokolawole"
-                  target="_blank"
-                >
-                  Kolawole Olubummo
-                </Link>{" "}
-              </span>
-            </p>
+        <ProgressBarProviders>
+          <div>
+            {children}
+            <div className="flex proggy justify-center">
+              <p className="text-shade">
+                Built by David, Designed by{" "}
+                <span className="text-gray-300">
+                  {" "}
+                  <Link
+                    href="https://behance.net/olubummokolawole"
+                    target="_blank"
+                  >
+                    Kolawole Olubummo
+                  </Link>{" "}
+                </span>
+              </p>
+            </div>
           </div>
-        </div>
+        </ProgressBarProviders>
       </body>
     </html>
   );

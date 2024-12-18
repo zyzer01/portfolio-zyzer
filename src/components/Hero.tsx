@@ -72,8 +72,8 @@ const Hero = () => {
         efficient but also prioritize performance, accessibility, and responsiveness.
       </h6>
       <Button
-        text="Resume"
-        href="https://drive.google.com/file/d/11it0pxAYbKc_uLoiHh0HpX6C7jQ1bFuE/view?usp=drive_link"
+        text="View Blog"
+        href="/blog"
       />
       <div className="proggy pt-8">
         <Marquee>
